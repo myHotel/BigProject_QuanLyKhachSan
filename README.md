@@ -1,1 +1,3 @@
+<<<<<<< HEAD
 # BigProject_QuanLyKhachSan
+=======
