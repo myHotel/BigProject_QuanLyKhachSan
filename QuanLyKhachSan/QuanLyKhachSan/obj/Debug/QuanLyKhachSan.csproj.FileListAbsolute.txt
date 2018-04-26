@@ -1,0 +1,14 @@
+c:\users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
+c:\users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe
+c:\users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.pdb
+c:\users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csprojResolveAssemblyReference.cache
+c:\users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form1.resources
+c:\users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
+c:\users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.Cache
+c:\users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
+c:\users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
+C:\Users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.User_form.resources
+C:\Users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.DMK_form.resources
+C:\Users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.TKNV_form.resources
+C:\Users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.info_form.resources
+C:\Users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.DatPhong_form.resources
