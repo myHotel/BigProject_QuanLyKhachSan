@@ -7,5 +7,13 @@
 
 Xin mời vào
 
-Em không biết viết báo cáo thầy ơi
+Thành viên:
+
+1. Nguyễn Thanh Sang
+
+2. Nguyễn Hoàng Anh Tú
+
+3. Cao Đức Minh
+
+4. Trần Thuận Thiên
 
