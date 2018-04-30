@@ -144,6 +144,12 @@ namespace QuanLyKhachSan
             f.ShowDialog();
         }
 
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            ThanhToan_form f = new ThanhToan_form();
+            f.ShowDialog();
+        }
+
         
 
        

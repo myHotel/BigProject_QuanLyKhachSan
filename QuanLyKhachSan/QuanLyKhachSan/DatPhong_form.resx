@@ -846,7 +846,7 @@
     <value>85, 135</value>
   </data>
   <data name="txtGiaTien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 23</value>
+    <value>116, 25</value>
   </data>
   <data name="txtGiaTien.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -864,13 +864,13 @@
     <value>2</value>
   </data>
   <data name="cboLoaiPhong.ItemHeight" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="cboLoaiPhong.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 93</value>
   </data>
   <data name="cboLoaiPhong.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 23</value>
+    <value>116, 25</value>
   </data>
   <data name="cboLoaiPhong.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -987,13 +987,13 @@
     <value>4</value>
   </data>
   <data name="cboTRANGTHAI.ItemHeight" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="cboTRANGTHAI.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 184</value>
   </data>
   <data name="cboTRANGTHAI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 23</value>
+    <value>117, 25</value>
   </data>
   <data name="cboTRANGTHAI.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1011,13 +1011,13 @@
     <value>5</value>
   </data>
   <data name="cboTenPhong.ItemHeight" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="cboTenPhong.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 51</value>
   </data>
   <data name="cboTenPhong.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 23</value>
+    <value>116, 25</value>
   </data>
   <data name="cboTenPhong.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1038,7 +1038,7 @@
     <value>85, 6</value>
   </data>
   <data name="txtMAPHONG.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 23</value>
+    <value>117, 25</value>
   </data>
   <data name="txtMAPHONG.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1152,7 +1152,7 @@
     <value>11</value>
   </data>
   <data name="labelX1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Segoe UI Light, 10pt, style=Bold</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 6</value>
@@ -1179,7 +1179,7 @@
     <value>12</value>
   </data>
   <data name="groupPanel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Segoe UI Light, 10pt, style=Bold</value>
   </data>
   <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 89</value>
@@ -1280,27 +1280,6 @@
   <data name="&gt;&gt;dgvDSPhong.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="txtMaNV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 369</value>
-  </data>
-  <data name="txtMaNV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 23</value>
-  </data>
-  <data name="txtMaNV.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txtMaNV.Name" xml:space="preserve">
-    <value>txtMaNV</value>
-  </data>
-  <data name="&gt;&gt;txtMaNV.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
-  </data>
-  <data name="&gt;&gt;txtMaNV.Parent" xml:space="preserve">
-    <value>groupPanel2</value>
-  </data>
-  <data name="&gt;&gt;txtMaNV.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
     <value>205, 403</value>
   </data>
@@ -1323,16 +1302,16 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;buttonX2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="dtpNgayNhan.CustomFormat" xml:space="preserve">
-    <value>'Ngày' dd - 'tháng' MM - 'năm' yyyy</value>
+    <value>dd-MM-yyyy  HH:mm:ss</value>
   </data>
   <data name="dtpNgayNhan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 320</value>
+    <value>17, 349</value>
   </data>
   <data name="dtpNgayNhan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 23</value>
+    <value>282, 25</value>
   </data>
   <data name="dtpNgayNhan.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1347,13 +1326,13 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;dtpNgayNhan.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="txtSDT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 253</value>
+    <value>17, 273</value>
   </data>
   <data name="txtSDT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 23</value>
+    <value>214, 25</value>
   </data>
   <data name="txtSDT.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1368,13 +1347,13 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;txtSDT.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="txtCMND.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 183</value>
+    <value>17, 197</value>
   </data>
   <data name="txtCMND.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 23</value>
+    <value>214, 25</value>
   </data>
   <data name="txtCMND.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1389,13 +1368,13 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;txtCMND.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="txtTENKH.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 110</value>
+    <value>17, 123</value>
   </data>
   <data name="txtTENKH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 23</value>
+    <value>214, 25</value>
   </data>
   <data name="txtTENKH.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1410,13 +1389,13 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;txtTENKH.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="txtMAKH.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 47</value>
   </data>
   <data name="txtMAKH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 23</value>
+    <value>214, 25</value>
   </data>
   <data name="txtMAKH.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1431,7 +1410,7 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;txtMAKH.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="btnDatPhong.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 403</value>
@@ -1455,40 +1434,13 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;btnDatPhong.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="labelX11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="labelX11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 369</value>
-  </data>
-  <data name="labelX11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 23</value>
-  </data>
-  <data name="labelX11.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="labelX11.Text" xml:space="preserve">
-    <value>Nhân viên đặt phòng</value>
-  </data>
-  <data name="&gt;&gt;labelX11.Name" xml:space="preserve">
-    <value>labelX11</value>
-  </data>
-  <data name="&gt;&gt;labelX11.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
-  </data>
-  <data name="&gt;&gt;labelX11.Parent" xml:space="preserve">
-    <value>groupPanel2</value>
-  </data>
-  <data name="&gt;&gt;labelX11.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="labelX10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Segoe UI Light, 10pt, style=Bold</value>
   </data>
   <data name="labelX10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 291</value>
+    <value>17, 320</value>
   </data>
   <data name="labelX10.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 23</value>
@@ -1509,13 +1461,13 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;labelX10.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="labelX9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Segoe UI Light, 10pt, style=Bold</value>
   </data>
   <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 224</value>
+    <value>17, 243</value>
   </data>
   <data name="labelX9.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 23</value>
@@ -1536,13 +1488,13 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;labelX9.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="labelX8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Segoe UI Light, 10pt, style=Bold</value>
   </data>
   <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 151</value>
+    <value>17, 168</value>
   </data>
   <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 23</value>
@@ -1563,13 +1515,13 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;labelX8.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="labelX7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Segoe UI Light, 10pt, style=Bold</value>
   </data>
   <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 81</value>
+    <value>17, 94</value>
   </data>
   <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 23</value>
@@ -1590,10 +1542,10 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;labelX7.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="labelX6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Segoe UI Light, 10pt, style=Bold</value>
   </data>
   <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 18</value>
@@ -1617,10 +1569,10 @@
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;labelX6.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
   </data>
   <data name="groupPanel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+    <value>Segoe UI Light, 10pt, style=Bold</value>
   </data>
   <data name="groupPanel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>887, 1</value>
@@ -1658,6 +1610,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1205, 481</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Light, 8.25pt</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

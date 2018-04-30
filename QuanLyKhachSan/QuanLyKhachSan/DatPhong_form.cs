@@ -101,18 +101,17 @@ namespace QuanLyKhachSan
             {
                 MAKH = txtMAKH.Text,
                 TENKH = txtTENKH.Text,
-                MAPHONG = txtMAPHONG.Text,
                 CMND = txtCMND.Text,
                 SDT = txtSDT.Text
             };
-            QUAN_LY_PHONG qlp = new QUAN_LY_PHONG
+            DATPHONG qlp = new DATPHONG
             {
-                MANV = txtMaNV.Text,
+                MANV = Form1.nv.MANV,
                 MAPHONG = txtMAPHONG.Text,
                 MAKH = txtMAKH.Text,
                 NGAYNHAN = dtpNgayNhan.Value,
                 NGAYTRA = null,
-                THANHTOAN = false
+                TRANGTHAI = "Chưa thanh toán"
             };
             PHONG ph = db.PHONGs.SingleOrDefault(p=>p.MAPHONG == txtMAPHONG.Text);
             if(ph.TRANGTHAI == "Đã thuê")
@@ -128,7 +127,7 @@ namespace QuanLyKhachSan
                 else
                 {
                     ph.TRANGTHAI = "Đã thuê";
-                    db.QUAN_LY_PHONGs.InsertOnSubmit(qlp);
+                    db.DATPHONGs.InsertOnSubmit(qlp);
                     db.KHACHHANGs.InsertOnSubmit(kh);
                     db.SubmitChanges();
                     LOADDSPhong();

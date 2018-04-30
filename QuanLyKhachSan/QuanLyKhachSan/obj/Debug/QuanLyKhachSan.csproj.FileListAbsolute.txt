@@ -12,3 +12,18 @@ C:\Users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSa
 C:\Users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.TKNV_form.resources
 C:\Users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.info_form.resources
 C:\Users\home\documents\visual studio 2013\Projects\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.DatPhong_form.resources
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.pdb
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.DatPhong_form.resources
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.DMK_form.resources
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form1.resources
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.info_form.resources
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.TKNV_form.resources
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.User_form.resources
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.Cache
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csprojResolveAssemblyReference.cache
+F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ThanhToan_form.resources

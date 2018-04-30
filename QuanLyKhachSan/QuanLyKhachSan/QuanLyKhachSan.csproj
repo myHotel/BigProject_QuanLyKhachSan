@@ -91,6 +91,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyKS.dbml</DependentUpon>
     </Compile>
+    <Compile Include="ThanhToan_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToan_form.Designer.cs">
+      <DependentUpon>ThanhToan_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="TKNV_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     <None Include="QuanLyKS.dbml.layout">
       <DependentUpon>QuanLyKS.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="ThanhToan_form.resx">
+      <DependentUpon>ThanhToan_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TKNV_form.resx">
       <DependentUpon>TKNV_form.cs</DependentUpon>
     </EmbeddedResource>
