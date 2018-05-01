@@ -105,7 +105,11 @@ namespace QuanLyKhachSan
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult dr = MessageBox.Show("Bạn có muốn thoát?", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if(dr == DialogResult.OK)
+            {
+                this.Close();
+            }
         }
 
         private void btnDMKbar_Click(object sender, EventArgs e)
@@ -150,9 +154,10 @@ namespace QuanLyKhachSan
             f.ShowDialog();
         }
 
-        
-
-       
-
+        private void btnLichSu_Click(object sender, EventArgs e)
+        {
+            LichSu_form f = new LichSu_form();
+            f.ShowDialog();
+        }
     }
 }

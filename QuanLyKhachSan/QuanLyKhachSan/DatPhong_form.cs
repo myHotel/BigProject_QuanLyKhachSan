@@ -24,7 +24,9 @@ namespace QuanLyKhachSan
             cboTenPhong.DataSource = db.PHONGs;
             cboTenPhong.DisplayMember = "TENPHONG";
             cboTenPhong.ValueMember = "MAPHONG";
-
+            //không cho chỉnh mã phòng, giá tiền
+            txtMAPHONG.Enabled = false;
+            txtGiaTien.Enabled = false;
 
             LOADDSPhong();
         }
@@ -81,6 +83,21 @@ namespace QuanLyKhachSan
 
         private void loadTimKiem()
         {
+            //nếu cbo Loại phòng là "Tất cả" thì show ra hết
+            if(cboLoaiPhong.SelectedItem.ToString() == "Tất cả")
+            {
+                dgvDSPhong.DataSource = db.PHONGs.Select(p => new
+                {
+                    p.MAPHONG,
+                    p.TENPHONG,
+                    p.LOAIPHONG,
+                    p.GIAPHONG,
+                    p.TRANGTHAI
+                });
+            }
+            //còn không thì show theo loại phòng
+            else
+            {
                 dgvDSPhong.DataSource = db.PHONGs.Where(p => p.LOAIPHONG == cboLoaiPhong.SelectedItem.ToString()).Select(p => new
                 {
                     p.MAPHONG,
@@ -89,6 +106,7 @@ namespace QuanLyKhachSan
                     p.GIAPHONG,
                     p.TRANGTHAI
                 });
+            }
         }
 
         private void buttonX1_Click(object sender, EventArgs e)
@@ -138,7 +156,11 @@ namespace QuanLyKhachSan
 
         private void buttonX2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult dr = MessageBox.Show("Bạn có muốn thoát", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if(dr == DialogResult.OK)
+            {
+                this.Close();
+            }
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)

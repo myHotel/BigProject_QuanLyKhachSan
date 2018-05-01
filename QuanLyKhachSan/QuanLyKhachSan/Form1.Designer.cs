@@ -65,11 +65,11 @@
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.styleManager3 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.listOption = new DevComponents.DotNetBar.Metro.MetroTilePanel();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btnLichSu = new DevComponents.DotNetBar.ButtonX();
             this.btnKhachHang = new DevComponents.DotNetBar.ButtonX();
             this.btnDatPhong = new DevComponents.DotNetBar.ButtonX();
             this.lblMessage = new DevComponents.DotNetBar.LabelX();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.panelEx2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.explorerBar1)).BeginInit();
@@ -608,6 +608,21 @@
             this.listOption.Text = "metroTilePanel1";
             this.listOption.ItemClick += new System.EventHandler(this.listOption_ItemClick);
             // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Image = ((System.Drawing.Image)(resources.GetObject("buttonX1.Image")));
+            this.buttonX1.ImageFixedSize = new System.Drawing.Size(70, 70);
+            this.buttonX1.Location = new System.Drawing.Point(15, 127);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(325, 67);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 5;
+            this.buttonX1.Text = "Thanh toán";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
             // btnLichSu
             // 
             this.btnLichSu.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -621,6 +636,7 @@
             this.btnLichSu.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnLichSu.TabIndex = 4;
             this.btnLichSu.Text = "Lịch sử đặt phòng";
+            this.btnLichSu.Click += new System.EventHandler(this.btnLichSu_Click);
             // 
             // btnKhachHang
             // 
@@ -664,21 +680,6 @@
             this.lblMessage.Size = new System.Drawing.Size(200, 23);
             this.lblMessage.TabIndex = 0;
             this.lblMessage.Text = "BẠN CHƯA ĐĂNG NHẬP !!";
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX1.Image = ((System.Drawing.Image)(resources.GetObject("buttonX1.Image")));
-            this.buttonX1.ImageFixedSize = new System.Drawing.Size(70, 70);
-            this.buttonX1.Location = new System.Drawing.Point(15, 127);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(325, 67);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 5;
-            this.buttonX1.Text = "Thanh toán";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // Form1
             // 

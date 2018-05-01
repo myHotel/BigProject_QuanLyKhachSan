@@ -33,19 +33,19 @@ namespace QuanLyKhachSan
     partial void InsertDATPHONG(DATPHONG instance);
     partial void UpdateDATPHONG(DATPHONG instance);
     partial void DeleteDATPHONG(DATPHONG instance);
+    partial void InsertPHONG(PHONG instance);
+    partial void UpdatePHONG(PHONG instance);
+    partial void DeletePHONG(PHONG instance);
     partial void InsertKHACHHANG(KHACHHANG instance);
     partial void UpdateKHACHHANG(KHACHHANG instance);
     partial void DeleteKHACHHANG(KHACHHANG instance);
     partial void InsertNHANVIEN(NHANVIEN instance);
     partial void UpdateNHANVIEN(NHANVIEN instance);
     partial void DeleteNHANVIEN(NHANVIEN instance);
-    partial void InsertPHONG(PHONG instance);
-    partial void UpdatePHONG(PHONG instance);
-    partial void DeletePHONG(PHONG instance);
     #endregion
 		
 		public QuanLyKSDataContext() : 
-				base(global::QuanLyKhachSan.Properties.Settings.Default.QuanLyKhachSanConnectionString, mappingSource)
+				base(global::QuanLyKhachSan.Properties.Settings.Default.QuanLyKhachSanConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -82,6 +82,14 @@ namespace QuanLyKhachSan
 			}
 		}
 		
+		public System.Data.Linq.Table<PHONG> PHONGs
+		{
+			get
+			{
+				return this.GetTable<PHONG>();
+			}
+		}
+		
 		public System.Data.Linq.Table<KHACHHANG> KHACHHANGs
 		{
 			get
@@ -98,11 +106,11 @@ namespace QuanLyKhachSan
 			}
 		}
 		
-		public System.Data.Linq.Table<PHONG> PHONGs
+		public System.Data.Linq.Table<LICHSU_VIEW> LICHSU_VIEWs
 		{
 			get
 			{
-				return this.GetTable<PHONG>();
+				return this.GetTable<LICHSU_VIEW>();
 			}
 		}
 	}
@@ -125,11 +133,11 @@ namespace QuanLyKhachSan
 		
 		private string _TRANGTHAI;
 		
+		private EntityRef<PHONG> _PHONG;
+		
 		private EntityRef<KHACHHANG> _KHACHHANG;
 		
 		private EntityRef<NHANVIEN> _NHANVIEN;
-		
-		private EntityRef<PHONG> _PHONG;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -151,9 +159,9 @@ namespace QuanLyKhachSan
 		
 		public DATPHONG()
 		{
+			this._PHONG = default(EntityRef<PHONG>);
 			this._KHACHHANG = default(EntityRef<KHACHHANG>);
 			this._NHANVIEN = default(EntityRef<NHANVIEN>);
-			this._PHONG = default(EntityRef<PHONG>);
 			OnCreated();
 		}
 		
@@ -229,7 +237,7 @@ namespace QuanLyKhachSan
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NGAYNHAN", DbType="Date")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NGAYNHAN", DbType="DateTime")]
 		public System.Nullable<System.DateTime> NGAYNHAN
 		{
 			get
@@ -249,7 +257,7 @@ namespace QuanLyKhachSan
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NGAYTRA", DbType="Date")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NGAYTRA", DbType="DateTime")]
 		public System.Nullable<System.DateTime> NGAYTRA
 		{
 			get
@@ -285,6 +293,40 @@ namespace QuanLyKhachSan
 					this._TRANGTHAI = value;
 					this.SendPropertyChanged("TRANGTHAI");
 					this.OnTRANGTHAIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHONG_DATPHONG", Storage="_PHONG", ThisKey="MAPHONG", OtherKey="MAPHONG", IsForeignKey=true)]
+		public PHONG PHONG
+		{
+			get
+			{
+				return this._PHONG.Entity;
+			}
+			set
+			{
+				PHONG previousValue = this._PHONG.Entity;
+				if (((previousValue != value) 
+							|| (this._PHONG.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._PHONG.Entity = null;
+						previousValue.DATPHONGs.Remove(this);
+					}
+					this._PHONG.Entity = value;
+					if ((value != null))
+					{
+						value.DATPHONGs.Add(this);
+						this._MAPHONG = value.MAPHONG;
+					}
+					else
+					{
+						this._MAPHONG = default(string);
+					}
+					this.SendPropertyChanged("PHONG");
 				}
 			}
 		}
@@ -357,37 +399,177 @@ namespace QuanLyKhachSan
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHONG_DATPHONG", Storage="_PHONG", ThisKey="MAPHONG", OtherKey="MAPHONG", IsForeignKey=true)]
-		public PHONG PHONG
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PHONG")]
+	public partial class PHONG : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _MAPHONG;
+		
+		private string _TENPHONG;
+		
+		private string _LOAIPHONG;
+		
+		private long _GIAPHONG;
+		
+		private string _TRANGTHAI;
+		
+		private EntitySet<DATPHONG> _DATPHONGs;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMAPHONGChanging(string value);
+    partial void OnMAPHONGChanged();
+    partial void OnTENPHONGChanging(string value);
+    partial void OnTENPHONGChanged();
+    partial void OnLOAIPHONGChanging(string value);
+    partial void OnLOAIPHONGChanged();
+    partial void OnGIAPHONGChanging(long value);
+    partial void OnGIAPHONGChanged();
+    partial void OnTRANGTHAIChanging(string value);
+    partial void OnTRANGTHAIChanged();
+    #endregion
+		
+		public PHONG()
+		{
+			this._DATPHONGs = new EntitySet<DATPHONG>(new Action<DATPHONG>(this.attach_DATPHONGs), new Action<DATPHONG>(this.detach_DATPHONGs));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAPHONG", DbType="Char(4) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MAPHONG
 		{
 			get
 			{
-				return this._PHONG.Entity;
+				return this._MAPHONG;
 			}
 			set
 			{
-				PHONG previousValue = this._PHONG.Entity;
-				if (((previousValue != value) 
-							|| (this._PHONG.HasLoadedOrAssignedValue == false)))
+				if ((this._MAPHONG != value))
 				{
+					this.OnMAPHONGChanging(value);
 					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._PHONG.Entity = null;
-						previousValue.DATPHONGs.Remove(this);
-					}
-					this._PHONG.Entity = value;
-					if ((value != null))
-					{
-						value.DATPHONGs.Add(this);
-						this._MAPHONG = value.MAPHONG;
-					}
-					else
-					{
-						this._MAPHONG = default(string);
-					}
-					this.SendPropertyChanged("PHONG");
+					this._MAPHONG = value;
+					this.SendPropertyChanged("MAPHONG");
+					this.OnMAPHONGChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TENPHONG", DbType="VarChar(4) NOT NULL", CanBeNull=false)]
+		public string TENPHONG
+		{
+			get
+			{
+				return this._TENPHONG;
+			}
+			set
+			{
+				if ((this._TENPHONG != value))
+				{
+					this.OnTENPHONGChanging(value);
+					this.SendPropertyChanging();
+					this._TENPHONG = value;
+					this.SendPropertyChanged("TENPHONG");
+					this.OnTENPHONGChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LOAIPHONG", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string LOAIPHONG
+		{
+			get
+			{
+				return this._LOAIPHONG;
+			}
+			set
+			{
+				if ((this._LOAIPHONG != value))
+				{
+					this.OnLOAIPHONGChanging(value);
+					this.SendPropertyChanging();
+					this._LOAIPHONG = value;
+					this.SendPropertyChanged("LOAIPHONG");
+					this.OnLOAIPHONGChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GIAPHONG", DbType="BigInt NOT NULL")]
+		public long GIAPHONG
+		{
+			get
+			{
+				return this._GIAPHONG;
+			}
+			set
+			{
+				if ((this._GIAPHONG != value))
+				{
+					this.OnGIAPHONGChanging(value);
+					this.SendPropertyChanging();
+					this._GIAPHONG = value;
+					this.SendPropertyChanged("GIAPHONG");
+					this.OnGIAPHONGChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TRANGTHAI", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string TRANGTHAI
+		{
+			get
+			{
+				return this._TRANGTHAI;
+			}
+			set
+			{
+				if ((this._TRANGTHAI != value))
+				{
+					this.OnTRANGTHAIChanging(value);
+					this.SendPropertyChanging();
+					this._TRANGTHAI = value;
+					this.SendPropertyChanged("TRANGTHAI");
+					this.OnTRANGTHAIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHONG_DATPHONG", Storage="_DATPHONGs", ThisKey="MAPHONG", OtherKey="MAPHONG")]
+		public EntitySet<DATPHONG> DATPHONGs
+		{
+			get
+			{
+				return this._DATPHONGs;
+			}
+			set
+			{
+				this._DATPHONGs.Assign(value);
 			}
 		}
 		
@@ -409,6 +591,18 @@ namespace QuanLyKhachSan
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_DATPHONGs(DATPHONG entity)
+		{
+			this.SendPropertyChanging();
+			entity.PHONG = this;
+		}
+		
+		private void detach_DATPHONGs(DATPHONG entity)
+		{
+			this.SendPropertyChanging();
+			entity.PHONG = null;
 		}
 	}
 	
@@ -880,64 +1074,24 @@ namespace QuanLyKhachSan
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PHONG")]
-	public partial class PHONG : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LICHSU_VIEW")]
+	public partial class LICHSU_VIEW
 	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private string _MAPHONG;
 		
 		private string _TENPHONG;
 		
-		private string _LOAIPHONG;
+		private string _TENKH;
 		
-		private long _GIAPHONG;
+		private string _HOTEN;
+		
+		private System.Nullable<System.DateTime> _NGAYNHAN;
+		
+		private System.Nullable<System.DateTime> _NGAYTRA;
 		
 		private string _TRANGTHAI;
 		
-		private EntitySet<DATPHONG> _DATPHONGs;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMAPHONGChanging(string value);
-    partial void OnMAPHONGChanged();
-    partial void OnTENPHONGChanging(string value);
-    partial void OnTENPHONGChanged();
-    partial void OnLOAIPHONGChanging(string value);
-    partial void OnLOAIPHONGChanged();
-    partial void OnGIAPHONGChanging(long value);
-    partial void OnGIAPHONGChanged();
-    partial void OnTRANGTHAIChanging(string value);
-    partial void OnTRANGTHAIChanged();
-    #endregion
-		
-		public PHONG()
+		public LICHSU_VIEW()
 		{
-			this._DATPHONGs = new EntitySet<DATPHONG>(new Action<DATPHONG>(this.attach_DATPHONGs), new Action<DATPHONG>(this.detach_DATPHONGs));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAPHONG", DbType="Char(4) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MAPHONG
-		{
-			get
-			{
-				return this._MAPHONG;
-			}
-			set
-			{
-				if ((this._MAPHONG != value))
-				{
-					this.OnMAPHONGChanging(value);
-					this.SendPropertyChanging();
-					this._MAPHONG = value;
-					this.SendPropertyChanged("MAPHONG");
-					this.OnMAPHONGChanged();
-				}
-			}
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TENPHONG", DbType="VarChar(4) NOT NULL", CanBeNull=false)]
@@ -951,56 +1105,76 @@ namespace QuanLyKhachSan
 			{
 				if ((this._TENPHONG != value))
 				{
-					this.OnTENPHONGChanging(value);
-					this.SendPropertyChanging();
 					this._TENPHONG = value;
-					this.SendPropertyChanged("TENPHONG");
-					this.OnTENPHONGChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LOAIPHONG", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
-		public string LOAIPHONG
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TENKH", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string TENKH
 		{
 			get
 			{
-				return this._LOAIPHONG;
+				return this._TENKH;
 			}
 			set
 			{
-				if ((this._LOAIPHONG != value))
+				if ((this._TENKH != value))
 				{
-					this.OnLOAIPHONGChanging(value);
-					this.SendPropertyChanging();
-					this._LOAIPHONG = value;
-					this.SendPropertyChanged("LOAIPHONG");
-					this.OnLOAIPHONGChanged();
+					this._TENKH = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GIAPHONG", DbType="BigInt NOT NULL")]
-		public long GIAPHONG
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HOTEN", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string HOTEN
 		{
 			get
 			{
-				return this._GIAPHONG;
+				return this._HOTEN;
 			}
 			set
 			{
-				if ((this._GIAPHONG != value))
+				if ((this._HOTEN != value))
 				{
-					this.OnGIAPHONGChanging(value);
-					this.SendPropertyChanging();
-					this._GIAPHONG = value;
-					this.SendPropertyChanged("GIAPHONG");
-					this.OnGIAPHONGChanged();
+					this._HOTEN = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TRANGTHAI", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NGAYNHAN", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NGAYNHAN
+		{
+			get
+			{
+				return this._NGAYNHAN;
+			}
+			set
+			{
+				if ((this._NGAYNHAN != value))
+				{
+					this._NGAYNHAN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NGAYTRA", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NGAYTRA
+		{
+			get
+			{
+				return this._NGAYTRA;
+			}
+			set
+			{
+				if ((this._NGAYTRA != value))
+				{
+					this._NGAYTRA = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TRANGTHAI", DbType="NVarChar(20)")]
 		public string TRANGTHAI
 		{
 			get
@@ -1011,58 +1185,9 @@ namespace QuanLyKhachSan
 			{
 				if ((this._TRANGTHAI != value))
 				{
-					this.OnTRANGTHAIChanging(value);
-					this.SendPropertyChanging();
 					this._TRANGTHAI = value;
-					this.SendPropertyChanged("TRANGTHAI");
-					this.OnTRANGTHAIChanged();
 				}
 			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHONG_DATPHONG", Storage="_DATPHONGs", ThisKey="MAPHONG", OtherKey="MAPHONG")]
-		public EntitySet<DATPHONG> DATPHONGs
-		{
-			get
-			{
-				return this._DATPHONGs;
-			}
-			set
-			{
-				this._DATPHONGs.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_DATPHONGs(DATPHONG entity)
-		{
-			this.SendPropertyChanging();
-			entity.PHONG = this;
-		}
-		
-		private void detach_DATPHONGs(DATPHONG entity)
-		{
-			this.SendPropertyChanging();
-			entity.PHONG = null;
 		}
 	}
 }

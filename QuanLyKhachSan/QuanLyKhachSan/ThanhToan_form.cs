@@ -28,7 +28,7 @@ namespace QuanLyKhachSan
 
         private void LoadDSPHONG()
         {
-            dgvDSPHONG.DataSource = db.DATPHONGs.OrderBy(p => p.TRANGTHAI == "Chưa thanh toán").Select(p=> new
+            dgvDSPHONG.DataSource = db.DATPHONGs.Where(p => p.TRANGTHAI == "Chưa thanh toán").Select(p=> new
             {
                 p.MAPHONG,
                 p.MAKH,
@@ -69,18 +69,18 @@ namespace QuanLyKhachSan
                 dtpNGAYNHAN.Value = DateTime.Parse(dr.Cells[3].Value.ToString());
                 txtGiaTien.Text = dr.Cells[4].Value.ToString();
                 TimeSpan c = DateTime.Now.Subtract(dtpNGAYNHAN.Value);
-                nbrudSONGAY.Value = c.Days;
-                nbrudGIO.Value = c.Hours;
+                //nbrudSONGAY.Value = c.Days;
+                //nbrudGIO.Value = c.Hours;
                 PHONG ph = new PHONG();
                 ph = db.PHONGs.SingleOrDefault(p => p.MAPHONG == cboMaPhong.Text);
-                if (nbrudSONGAY.Value == 0)
+                if (c.Days == 0)
                 {
                     double sogio = 0;
                     sogio = c.Hours;
-                    lblTongCong.Text = nbrudGIO.Value * ph.GIAPHONG / 4 + " đ";
+                    lblTongCong.Text = c.Hours * ph.GIAPHONG / 4 + " đ";
                 }
                 else { 
-                    lblTongCong.Text = ph.GIAPHONG * nbrudSONGAY.Value + " đ"; 
+                    lblTongCong.Text = ph.GIAPHONG * c.Days + " đ"; 
                 }
 
             }
@@ -93,7 +93,8 @@ namespace QuanLyKhachSan
             DialogResult dr = MessageBox.Show("Bạn có chắc muốn thanh toán cho khách hàng " + thanhtoan.MAKH, "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (thanhtoan != null && dr == DialogResult.OK)
             {
-                thanhtoan.NGAYTRA = dtpNgayGio.Value;
+                //chỉnh lại từ dtpNgayGio.Value thành DateTime.Now
+                thanhtoan.NGAYTRA = DateTime.Now;
                 thanhtoan.TRANGTHAI = "Đã thanh toán";
                 PHONG ph = db.PHONGs.SingleOrDefault(p => p.MAPHONG == cboMaPhong.Text.Trim());
                 ph.TRANGTHAI = "Còn trống";

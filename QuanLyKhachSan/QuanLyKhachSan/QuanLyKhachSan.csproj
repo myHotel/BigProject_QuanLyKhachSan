@@ -84,6 +84,12 @@
     <Compile Include="info_form.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LichSu_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichSu_form.Designer.cs">
+      <DependentUpon>LichSu_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyKS.designer.cs">
@@ -121,6 +127,9 @@
     <EmbeddedResource Include="info_form.resx">
       <DependentUpon>info_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LichSu_form.resx">
+      <DependentUpon>LichSu_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -130,9 +139,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="QuanLyKS.dbml.layout">
-      <DependentUpon>QuanLyKS.dbml</DependentUpon>
-    </None>
     <EmbeddedResource Include="ThanhToan_form.resx">
       <DependentUpon>ThanhToan_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +161,9 @@
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>QuanLyKS.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKS.dbml.layout">
+      <DependentUpon>QuanLyKS.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

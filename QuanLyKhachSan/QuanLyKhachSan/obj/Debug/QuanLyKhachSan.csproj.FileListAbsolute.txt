@@ -27,3 +27,30 @@ F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.User_form.res
 F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.Cache
 F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csprojResolveAssemblyReference.cache
 F:\QuanLyKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ThanhToan_form.resources
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.pdb
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevComponents.DotNetBar2.dll
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevComponents.Instrumentation.dll
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevComponents.DotNetBar2.xml
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevComponents.Instrumentation.xml
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csprojResolveAssemblyReference.cache
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.DatPhong_form.resources
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.DMK_form.resources
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form1.resources
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.info_form.resources
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ThanhToan_form.resources
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.TKNV_form.resources
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.User_form.resources
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.Cache
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CoreCompileInputs.cache
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.LichSu_form.resources
