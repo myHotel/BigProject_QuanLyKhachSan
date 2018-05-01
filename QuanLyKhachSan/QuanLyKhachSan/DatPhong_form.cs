@@ -127,7 +127,8 @@ namespace QuanLyKhachSan
                 MANV = Form1.nv.MANV,
                 MAPHONG = txtMAPHONG.Text,
                 MAKH = txtMAKH.Text,
-                NGAYNHAN = dtpNgayNhan.Value,
+                //chỉnh khúc này từ dtpNgayNhan thành DateTime.Now và xóa luôn dtpNgayNhan
+                NGAYNHAN = DateTime.Now,
                 NGAYTRA = null,
                 TRANGTHAI = "Chưa thanh toán"
             };

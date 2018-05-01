@@ -33,6 +33,8 @@ namespace QuanLyKhachSan
             checkLuu = true;
             btnChinhSuaTT.Enabled = false;
             btnLuuTT.Enabled = true;
+            dtpNgaySinh.Enabled = true;
+            cboGioiTinh.Enabled = true;
         }
         
 
@@ -56,6 +58,9 @@ namespace QuanLyKhachSan
             txtDC.ReadOnly = true;
             txtSDT.ReadOnly = true;
             txtCMND.ReadOnly = true;
+            //bổ sung không cho chỉnh sửa NgaySinh và GioiTinh
+            dtpNgaySinh.Enabled = false;
+            cboGioiTinh.Enabled = false;
             btnLuuTT.Enabled = false;
         }
 
@@ -78,6 +83,8 @@ namespace QuanLyKhachSan
                 txtDC.ReadOnly = true;
                 txtSDT.ReadOnly = true;
                 txtCMND.ReadOnly = true;
+                dtpNgaySinh.Enabled = false;
+                cboGioiTinh.Enabled = false;
             }
         }
     }
