@@ -54,3 +54,4 @@ D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyK
 D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
 D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.LichSu_form.resources
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.KhachHang_form.resources

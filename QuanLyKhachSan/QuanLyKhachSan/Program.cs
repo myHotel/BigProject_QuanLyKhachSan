@@ -18,7 +18,7 @@ namespace QuanLyKhachSan
             Application.SetCompatibleTextRenderingDefault(false);
             NHANVIEN nv = new NHANVIEN();
             //Application.Run(new Form1(nv));
-            Application.Run(new DatPhong_form());
+            Application.Run(new KhachHang_form());
         }
     }
 }
