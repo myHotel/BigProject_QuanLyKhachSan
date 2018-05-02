@@ -50,9 +50,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.Instrumentation.dll</HintPath>
     </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=11.2.0.1, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,7 +69,7 @@
     <Compile Include="DatPhong_form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DatPhong_form.Designer.cs">
+    <Compile Include="DatPhong_form.designer.cs">
       <DependentUpon>DatPhong_form.cs</DependentUpon>
     </Compile>
     <Compile Include="DMK_form.cs">

@@ -24,9 +24,7 @@ namespace QuanLyKhachSan
             cboTenPhong.DataSource = db.PHONGs;
             cboTenPhong.DisplayMember = "TENPHONG";
             cboTenPhong.ValueMember = "MAPHONG";
-            //không cho chỉnh mã phòng, giá tiền
-            txtMAPHONG.Enabled = false;
-            txtGiaTien.Enabled = false;
+
 
             LOADDSPhong();
         }
@@ -69,8 +67,7 @@ namespace QuanLyKhachSan
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            //chỉnh lại nút tìm kiếm theo cboTenPhong thay vì txtMaPhong
-            dgvDSPhong.DataSource = db.PHONGs.Where(p => p.MAPHONG == cboTenPhong.SelectedValue.ToString()).Select(p=> new
+            dgvDSPhong.DataSource = db.PHONGs.Where(p => p.MAPHONG == txtMAPHONG.Text).Select(p=> new
             {
                 p.MAPHONG,
                 p.TENPHONG,
@@ -78,25 +75,12 @@ namespace QuanLyKhachSan
                 p.GIAPHONG,
                 p.TRANGTHAI
             });
+            if (txtMAPHONG.Text == "")
+                LOADDSPhong();
         }
 
         private void loadTimKiem()
         {
-            //nếu cbo Loại phòng là "Tất cả" thì show ra hết
-            if(cboLoaiPhong.SelectedItem.ToString() == "Tất cả")
-            {
-                dgvDSPhong.DataSource = db.PHONGs.Select(p => new
-                {
-                    p.MAPHONG,
-                    p.TENPHONG,
-                    p.LOAIPHONG,
-                    p.GIAPHONG,
-                    p.TRANGTHAI
-                });
-            }
-            //còn không thì show theo loại phòng
-            else
-            {
                 dgvDSPhong.DataSource = db.PHONGs.Where(p => p.LOAIPHONG == cboLoaiPhong.SelectedItem.ToString()).Select(p => new
                 {
                     p.MAPHONG,
@@ -105,7 +89,6 @@ namespace QuanLyKhachSan
                     p.GIAPHONG,
                     p.TRANGTHAI
                 });
-            }
         }
 
         private void buttonX1_Click(object sender, EventArgs e)
@@ -126,9 +109,9 @@ namespace QuanLyKhachSan
                 MANV = Form1.nv.MANV,
                 MAPHONG = txtMAPHONG.Text,
                 MAKH = txtMAKH.Text,
-                //chỉnh khúc này từ dtpNgayNhan thành DateTime.Now và xóa luôn dtpNgayNhan
-                NGAYNHAN = DateTime.Now,    
+                NGAYNHAN = dtpNgayNhan.Value,
                 NGAYTRA = null,
+                TONGTIEN = null,
                 TRANGTHAI = "Chưa thanh toán"
             };
             PHONG ph = db.PHONGs.SingleOrDefault(p=>p.MAPHONG == txtMAPHONG.Text);
@@ -156,21 +139,12 @@ namespace QuanLyKhachSan
 
         private void buttonX2_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Bạn có muốn thoát", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if(dr == DialogResult.OK)
-            {
-                this.Close();
-            }
+            this.Close();
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
             LOADDSPhong();
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
         }
 
       

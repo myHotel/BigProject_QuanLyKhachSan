@@ -775,9 +775,11 @@ namespace QuanLyKhachSan
 		
 		private System.Nullable<System.DateTime> _NGAYNHAN;
 		
-		private System.Nullable<System.DateTime> _NGAYTRA;
-		
 		private string _TRANGTHAI;
+		
+		private System.Nullable<long> _TONGTIEN;
+		
+		private System.Nullable<System.DateTime> _NGAYTRA;
 		
 		private EntityRef<KHACHHANG> _KHACHHANG;
 		
@@ -797,10 +799,12 @@ namespace QuanLyKhachSan
     partial void OnMANVChanged();
     partial void OnNGAYNHANChanging(System.Nullable<System.DateTime> value);
     partial void OnNGAYNHANChanged();
-    partial void OnNGAYTRAChanging(System.Nullable<System.DateTime> value);
-    partial void OnNGAYTRAChanged();
     partial void OnTRANGTHAIChanging(string value);
     partial void OnTRANGTHAIChanged();
+    partial void OnTONGTIENChanging(System.Nullable<long> value);
+    partial void OnTONGTIENChanged();
+    partial void OnNGAYTRAChanging(System.Nullable<System.DateTime> value);
+    partial void OnNGAYTRAChanged();
     #endregion
 		
 		public DATPHONG()
@@ -903,26 +907,6 @@ namespace QuanLyKhachSan
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NGAYTRA", DbType="DateTime")]
-		public System.Nullable<System.DateTime> NGAYTRA
-		{
-			get
-			{
-				return this._NGAYTRA;
-			}
-			set
-			{
-				if ((this._NGAYTRA != value))
-				{
-					this.OnNGAYTRAChanging(value);
-					this.SendPropertyChanging();
-					this._NGAYTRA = value;
-					this.SendPropertyChanged("NGAYTRA");
-					this.OnNGAYTRAChanged();
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TRANGTHAI", DbType="NVarChar(20)")]
 		public string TRANGTHAI
 		{
@@ -939,6 +923,46 @@ namespace QuanLyKhachSan
 					this._TRANGTHAI = value;
 					this.SendPropertyChanged("TRANGTHAI");
 					this.OnTRANGTHAIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TONGTIEN", DbType="BigInt")]
+		public System.Nullable<long> TONGTIEN
+		{
+			get
+			{
+				return this._TONGTIEN;
+			}
+			set
+			{
+				if ((this._TONGTIEN != value))
+				{
+					this.OnTONGTIENChanging(value);
+					this.SendPropertyChanging();
+					this._TONGTIEN = value;
+					this.SendPropertyChanged("TONGTIEN");
+					this.OnTONGTIENChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NGAYTRA", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NGAYTRA
+		{
+			get
+			{
+				return this._NGAYTRA;
+			}
+			set
+			{
+				if ((this._NGAYTRA != value))
+				{
+					this.OnNGAYTRAChanging(value);
+					this.SendPropertyChanging();
+					this._NGAYTRA = value;
+					this.SendPropertyChanged("NGAYTRA");
+					this.OnNGAYTRAChanged();
 				}
 			}
 		}

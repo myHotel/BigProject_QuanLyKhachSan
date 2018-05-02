@@ -59,7 +59,7 @@ namespace QuanLyKhachSan
                 LoadDSPHONG();
             }
         }
-
+        long thanhTien  = 0;
         private void dgvDSPHONG_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow dr = new DataGridViewRow();
@@ -79,16 +79,10 @@ namespace QuanLyKhachSan
                 txtSoGio.Text = songio.ToString();
                 PHONG ph = new PHONG();
                 ph = db.PHONGs.SingleOrDefault(p => p.MAPHONG == cboMaPhong.Text);
-<<<<<<< HEAD
-                long TongTien = 0;
-                TongTien = songay * ph.GIAPHONG + (songio % 24) * (ph.GIAPHONG / 4);
-                string tongtien = TongTien.ToString();
-                lblTongCong.Text = TongTien.ToString() + " đ";
-=======
                 //cách tính thành tiền
-                double thanhTien = c.Days * ph.GIAPHONG + c.Hours * (ph.GIAPHONG / 8);
-                lblTongCong.Text = thanhTien + " đ";
->>>>>>> dd890e793c42c7920c12cd802bf0304eb76c76cd
+                thanhTien = c.Days * ph.GIAPHONG + c.Hours * (ph.GIAPHONG / 8);
+                lblTongCong.Text = thanhTien.ToString();
+
             }
            
         }
@@ -102,6 +96,7 @@ namespace QuanLyKhachSan
                 //chỉnh lại từ dtpNgayGio.Value thành DateTime.Now
                 thanhtoan.NGAYTRA = DateTime.Now;
                 thanhtoan.TRANGTHAI = "Đã thanh toán";
+                thanhtoan.TONGTIEN = long.Parse(lblTongCong.Text);
                 PHONG ph = db.PHONGs.SingleOrDefault(p => p.MAPHONG == cboMaPhong.Text.Trim());
                 ph.TRANGTHAI = "Còn trống";
                 db.SubmitChanges();
