@@ -34,6 +34,40 @@ namespace QuanLyKhachSan
 
         private void LichSu_form_Load(object sender, EventArgs e)
         {
+            cboNgay.SelectedIndex = 1;
+            loadDSLichSu();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if(cboNgay.SelectedItem.ToString() == "Ngày nhận")
+            {
+                dgvLichSu.DataSource = db.DATPHONGs.Where(p => p.NGAYNHAN.Value.Date == dtpNgay.Value.Date).Select(p => new
+                {
+                    p.PHONG.TENPHONG,
+                    p.KHACHHANG.TENKH,
+                    p.NHANVIEN.HOTEN,
+                    p.NGAYNHAN,
+                    p.NGAYTRA,
+                    p.TRANGTHAI
+                });
+            }
+            else
+            {
+                dgvLichSu.DataSource = db.DATPHONGs.Where(p => p.NGAYTRA.Value.Date == dtpNgay.Value.Date).Select(p => new
+                {
+                    p.PHONG.TENPHONG,
+                    p.KHACHHANG.TENKH,
+                    p.NHANVIEN.HOTEN,
+                    p.NGAYNHAN,
+                    p.NGAYTRA,
+                    p.TRANGTHAI
+                });
+            }
+        }
+
+        private void btnLichSu_Click(object sender, EventArgs e)
+        {
             loadDSLichSu();
         }
     }
