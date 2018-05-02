@@ -69,7 +69,8 @@ namespace QuanLyKhachSan
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            dgvDSPhong.DataSource = db.PHONGs.Where(p => p.MAPHONG == txtMAPHONG.Text).Select(p=> new
+            //chỉnh lại nút tìm kiếm theo cboTenPhong thay vì txtMaPhong
+            dgvDSPhong.DataSource = db.PHONGs.Where(p => p.MAPHONG == cboTenPhong.SelectedValue.ToString()).Select(p=> new
             {
                 p.MAPHONG,
                 p.TENPHONG,
@@ -77,8 +78,6 @@ namespace QuanLyKhachSan
                 p.GIAPHONG,
                 p.TRANGTHAI
             });
-            if (txtMAPHONG.Text == "")
-                LOADDSPhong();
         }
 
         private void loadTimKiem()

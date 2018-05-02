@@ -119,17 +119,17 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="reflectionLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 13</value>
+    <value>11, 13</value>
   </data>
   <data name="reflectionLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 70</value>
+    <value>246, 70</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="reflectionLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="reflectionLabel1.Text" xml:space="preserve">
-    <value>&lt;b&gt;&lt;font size="+6"&gt;&lt;i&gt;Danh sách phòng&lt;/i&gt;&lt;font color="#B02B2C"&gt; MyHotel&lt;/font&gt;&lt;/font&gt;&lt;/b&gt;</value>
+    <value>&lt;b&gt;&lt;font size="+5"&gt;&lt;i&gt;Danh sách phòng&lt;/i&gt;&lt;font color="#B02B2C"&gt; GongCha Hotel&lt;/font&gt;&lt;/font&gt;&lt;/b&gt;</value>
   </data>
   <data name="&gt;&gt;reflectionLabel1.Name" xml:space="preserve">
     <value>reflectionLabel1</value>
@@ -1205,6 +1205,7 @@
   <data name="&gt;&gt;groupPanel1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+<<<<<<< HEAD
   <data name="comboItem1.Text" xml:space="preserve">
     <value>Đơn</value>
   </data>
@@ -1304,6 +1305,8 @@
   <data name="&gt;&gt;dtpNgayNhan.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+=======
+>>>>>>> dd890e793c42c7920c12cd802bf0304eb76c76cd
   <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
     <value>205, 396</value>
   </data>
@@ -1598,6 +1601,57 @@
   <data name="&gt;&gt;groupPanel2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="TRANGTHAI.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="TRANGTHAI.HeaderText" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <metadata name="GIAPHONG.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="GIAPHONG.HeaderText" xml:space="preserve">
+    <value>Giá phòng</value>
+  </data>
+  <metadata name="LOAIPHONG.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="LOAIPHONG.HeaderText" xml:space="preserve">
+    <value>Loại phòng</value>
+  </data>
+  <metadata name="TENPHONG.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="TENPHONG.HeaderText" xml:space="preserve">
+    <value>Tên phòng</value>
+  </data>
+  <metadata name="MAPHONG.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="MAPHONG.HeaderText" xml:space="preserve">
+    <value>Mã phòng</value>
+  </data>
+  <data name="dgvDSPhong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 13</value>
+  </data>
+  <data name="dgvDSPhong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>618, 459</value>
+  </data>
+  <data name="dgvDSPhong.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dgvDSPhong.Name" xml:space="preserve">
+    <value>dgvDSPhong</value>
+  </data>
+  <data name="&gt;&gt;dgvDSPhong.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.DataGridViewX, DevComponents.DotNetBar2, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
+  </data>
+  <data name="&gt;&gt;dgvDSPhong.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgvDSPhong.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1668,22 +1722,10 @@
   <data name="&gt;&gt;cboControng.Type" xml:space="preserve">
     <value>DevComponents.Editors.ComboItem, DevComponents.DotNetBar2, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
   </data>
-  <data name="&gt;&gt;MAPHONG.Name" xml:space="preserve">
-    <value>MAPHONG</value>
+  <data name="&gt;&gt;TRANGTHAI.Name" xml:space="preserve">
+    <value>TRANGTHAI</value>
   </data>
-  <data name="&gt;&gt;MAPHONG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TENPHONG.Name" xml:space="preserve">
-    <value>TENPHONG</value>
-  </data>
-  <data name="&gt;&gt;TENPHONG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LOAIPHONG.Name" xml:space="preserve">
-    <value>LOAIPHONG</value>
-  </data>
-  <data name="&gt;&gt;LOAIPHONG.Type" xml:space="preserve">
+  <data name="&gt;&gt;TRANGTHAI.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GIAPHONG.Name" xml:space="preserve">
@@ -1692,10 +1734,22 @@
   <data name="&gt;&gt;GIAPHONG.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TRANGTHAI.Name" xml:space="preserve">
-    <value>TRANGTHAI</value>
+  <data name="&gt;&gt;LOAIPHONG.Name" xml:space="preserve">
+    <value>LOAIPHONG</value>
   </data>
-  <data name="&gt;&gt;TRANGTHAI.Type" xml:space="preserve">
+  <data name="&gt;&gt;LOAIPHONG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TENPHONG.Name" xml:space="preserve">
+    <value>TENPHONG</value>
+  </data>
+  <data name="&gt;&gt;TENPHONG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MAPHONG.Name" xml:space="preserve">
+    <value>MAPHONG</value>
+  </data>
+  <data name="&gt;&gt;MAPHONG.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

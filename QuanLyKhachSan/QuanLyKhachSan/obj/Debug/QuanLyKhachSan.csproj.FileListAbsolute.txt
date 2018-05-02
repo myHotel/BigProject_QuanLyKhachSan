@@ -54,6 +54,7 @@ D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyK
 D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
 D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.LichSu_form.resources
+<<<<<<< HEAD
 F:\QLKS\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
 F:\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 F:\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
@@ -71,3 +72,6 @@ F:\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.TKNV_form.resourc
 F:\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.User_form.resources
 F:\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.Cache
 F:\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.DoanhThu_form.resources
+=======
+D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.KhachHang_form.resources
+>>>>>>> dd890e793c42c7920c12cd802bf0304eb76c76cd

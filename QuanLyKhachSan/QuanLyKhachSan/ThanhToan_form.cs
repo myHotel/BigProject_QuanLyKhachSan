@@ -22,7 +22,10 @@ namespace QuanLyKhachSan
             cboMaPhong.DataSource = db.PHONGs;
             cboMaPhong.DisplayMember = "MAPHONG";
             cboMaPhong.ValueMember = "MAPHONG";
-
+            txtMAKH.Enabled = false;
+            txtTENKH.Enabled = false;
+            dtpNGAYNHAN.Enabled = false;
+            txtGiaTien.Enabled = false;
             LoadDSPHONG();
         }
 
@@ -68,6 +71,7 @@ namespace QuanLyKhachSan
                 txtTENKH.Text = dr.Cells[2].Value.ToString();
                 dtpNGAYNHAN.Value = DateTime.Parse(dr.Cells[3].Value.ToString());
                 txtGiaTien.Text = dr.Cells[4].Value.ToString();
+                //tính ra ngày và giờ
                 TimeSpan c = DateTime.Now.Subtract(dtpNGAYNHAN.Value);
                 int songay = c.Days;
                 int songio = c.Hours;
@@ -75,10 +79,16 @@ namespace QuanLyKhachSan
                 txtSoGio.Text = songio.ToString();
                 PHONG ph = new PHONG();
                 ph = db.PHONGs.SingleOrDefault(p => p.MAPHONG == cboMaPhong.Text);
+<<<<<<< HEAD
                 long TongTien = 0;
                 TongTien = songay * ph.GIAPHONG + (songio % 24) * (ph.GIAPHONG / 4);
                 string tongtien = TongTien.ToString();
                 lblTongCong.Text = TongTien.ToString() + " đ";
+=======
+                //cách tính thành tiền
+                double thanhTien = c.Days * ph.GIAPHONG + c.Hours * (ph.GIAPHONG / 8);
+                lblTongCong.Text = thanhTien + " đ";
+>>>>>>> dd890e793c42c7920c12cd802bf0304eb76c76cd
             }
            
         }

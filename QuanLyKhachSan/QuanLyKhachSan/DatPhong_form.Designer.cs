@@ -55,12 +55,6 @@
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.dgvDSPhong = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.MAPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TENPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LOAIPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GIAPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TRANGTHAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.txtSDT = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -72,11 +66,20 @@
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
+<<<<<<< HEAD
             this.dtpNgayNhan = new System.Windows.Forms.DateTimePicker();
             this.labelX10 = new DevComponents.DotNetBar.LabelX();
+=======
+            this.TRANGTHAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GIAPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LOAIPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MAPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDSPhong = new DevComponents.DotNetBar.Controls.DataGridViewX();
+>>>>>>> dd890e793c42c7920c12cd802bf0304eb76c76cd
             this.groupPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhong)).BeginInit();
             this.groupPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhong)).BeginInit();
             this.SuspendLayout();
             // 
             // reflectionLabel1
@@ -308,6 +311,7 @@
             resources.ApplyResources(this.labelX1, "labelX1");
             this.labelX1.Name = "labelX1";
             // 
+<<<<<<< HEAD
             // dgvDSPhong
             // 
             this.dgvDSPhong.AllowUserToAddRows = false;
@@ -391,6 +395,8 @@
             this.TRANGTHAI.Name = "TRANGTHAI";
             this.TRANGTHAI.ReadOnly = true;
             // 
+=======
+>>>>>>> dd890e793c42c7920c12cd802bf0304eb76c76cd
             // groupPanel2
             // 
             this.groupPanel2.BackColor = System.Drawing.Color.White;
@@ -541,6 +547,7 @@
             resources.ApplyResources(this.labelX6, "labelX6");
             this.labelX6.Name = "labelX6";
             // 
+<<<<<<< HEAD
             // dtpNgayNhan
             // 
             resources.ApplyResources(this.dtpNgayNhan, "dtpNgayNhan");
@@ -556,6 +563,90 @@
             this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             resources.ApplyResources(this.labelX10, "labelX10");
             this.labelX10.Name = "labelX10";
+=======
+            // TRANGTHAI
+            // 
+            this.TRANGTHAI.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TRANGTHAI.DataPropertyName = "TRANGTHAI";
+            resources.ApplyResources(this.TRANGTHAI, "TRANGTHAI");
+            this.TRANGTHAI.Name = "TRANGTHAI";
+            this.TRANGTHAI.ReadOnly = true;
+            // 
+            // GIAPHONG
+            // 
+            this.GIAPHONG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.GIAPHONG.DataPropertyName = "GIAPHONG";
+            resources.ApplyResources(this.GIAPHONG, "GIAPHONG");
+            this.GIAPHONG.Name = "GIAPHONG";
+            this.GIAPHONG.ReadOnly = true;
+            // 
+            // LOAIPHONG
+            // 
+            this.LOAIPHONG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.LOAIPHONG.DataPropertyName = "LOAIPHONG";
+            resources.ApplyResources(this.LOAIPHONG, "LOAIPHONG");
+            this.LOAIPHONG.Name = "LOAIPHONG";
+            this.LOAIPHONG.ReadOnly = true;
+            // 
+            // TENPHONG
+            // 
+            this.TENPHONG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TENPHONG.DataPropertyName = "TENPHONG";
+            resources.ApplyResources(this.TENPHONG, "TENPHONG");
+            this.TENPHONG.Name = "TENPHONG";
+            this.TENPHONG.ReadOnly = true;
+            // 
+            // MAPHONG
+            // 
+            this.MAPHONG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MAPHONG.DataPropertyName = "MAPHONG";
+            resources.ApplyResources(this.MAPHONG, "MAPHONG");
+            this.MAPHONG.Name = "MAPHONG";
+            this.MAPHONG.ReadOnly = true;
+            // 
+            // dgvDSPhong
+            // 
+            this.dgvDSPhong.AllowUserToAddRows = false;
+            this.dgvDSPhong.AllowUserToDeleteRows = false;
+            this.dgvDSPhong.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Light", 8.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDSPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDSPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSPhong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MAPHONG,
+            this.TENPHONG,
+            this.LOAIPHONG,
+            this.GIAPHONG,
+            this.TRANGTHAI});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Light", 8.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDSPhong.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvDSPhong.EnableHeadersVisualStyles = false;
+            this.dgvDSPhong.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            resources.ApplyResources(this.dgvDSPhong, "dgvDSPhong");
+            this.dgvDSPhong.Name = "dgvDSPhong";
+            this.dgvDSPhong.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Light", 8.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDSPhong.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvDSPhong.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSPhong_RowEnter);
+>>>>>>> dd890e793c42c7920c12cd802bf0304eb76c76cd
             // 
             // DatPhong_form
             // 
@@ -569,8 +660,8 @@
             this.Name = "DatPhong_form";
             this.Load += new System.EventHandler(this.DatPhong_form_Load);
             this.groupPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhong)).EndInit();
             this.groupPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -589,13 +680,7 @@
         private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dgvDSPhong;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cboLoaiPhong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MAPHONG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TENPHONG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LOAIPHONG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GIAPHONG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TRANGTHAI;
         private DevComponents.DotNetBar.Controls.TextBoxX txtGiaTien;
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.Editors.ComboItem comboItem1;
@@ -617,7 +702,16 @@
         private DevComponents.DotNetBar.LabelX labelX6;
         private DevComponents.DotNetBar.ButtonX buttonX2;
         private DevComponents.DotNetBar.ButtonX btnCapNhat;
+<<<<<<< HEAD
         private System.Windows.Forms.DateTimePicker dtpNgayNhan;
         private DevComponents.DotNetBar.LabelX labelX10;
+=======
+        private System.Windows.Forms.DataGridViewTextBoxColumn TRANGTHAI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GIAPHONG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LOAIPHONG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENPHONG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MAPHONG;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dgvDSPhong;
+>>>>>>> dd890e793c42c7920c12cd802bf0304eb76c76cd
     }
 }

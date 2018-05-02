@@ -415,7 +415,7 @@
             this.labelX9.Size = new System.Drawing.Size(1112, 33);
             this.labelX9.TabIndex = 3;
             this.labelX9.Text = "Nếu thời gian sử dụng của quý khách nhỏ hơn 1 ngày thì khách sạn sẽ tính tiền the" +
-    "o giờ và giá tiền bằng 1/4 giá phòng mặc định.\r\n\r\n\r\n";
+    "o giờ và giá tiền bằng 1/8 giá phòng mặc định.\r\n\r\n\r\n";
             // 
             // labelX4
             // 
