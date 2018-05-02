@@ -64,7 +64,7 @@
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.styleManager3 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.listOption = new DevComponents.DotNetBar.Metro.MetroTilePanel();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.btnThanhToan = new DevComponents.DotNetBar.ButtonX();
             this.btnLichSu = new DevComponents.DotNetBar.ButtonX();
             this.btnKhachHang = new DevComponents.DotNetBar.ButtonX();
             this.btnDatPhong = new DevComponents.DotNetBar.ButtonX();
@@ -583,7 +583,7 @@
             this.listOption.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.listOption.BackgroundStyle.TextShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(198)))));
             this.listOption.ContainerControlProcessDialogKey = true;
-            this.listOption.Controls.Add(this.buttonX1);
+            this.listOption.Controls.Add(this.btnThanhToan);
             this.listOption.Controls.Add(this.btnLichSu);
             this.listOption.Controls.Add(this.btnKhachHang);
             this.listOption.Controls.Add(this.btnDatPhong);
@@ -595,20 +595,20 @@
             this.listOption.Text = "metroTilePanel1";
             this.listOption.ItemClick += new System.EventHandler(this.listOption_ItemClick);
             // 
-            // buttonX1
+            // btnThanhToan
             // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX1.Image = ((System.Drawing.Image)(resources.GetObject("buttonX1.Image")));
-            this.buttonX1.ImageFixedSize = new System.Drawing.Size(70, 70);
-            this.buttonX1.Location = new System.Drawing.Point(15, 127);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(325, 67);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 5;
-            this.buttonX1.Text = "Thanh toán";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            this.btnThanhToan.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThanhToan.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhToan.Image = ((System.Drawing.Image)(resources.GetObject("btnThanhToan.Image")));
+            this.btnThanhToan.ImageFixedSize = new System.Drawing.Size(70, 70);
+            this.btnThanhToan.Location = new System.Drawing.Point(15, 127);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(325, 67);
+            this.btnThanhToan.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnThanhToan.TabIndex = 5;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // btnLichSu
             // 
@@ -734,7 +734,7 @@
         private DevComponents.DotNetBar.ButtonX btnLichSu;
         private DevComponents.DotNetBar.ButtonX btnKhachHang;
         private DevComponents.DotNetBar.ButtonX btnDatPhong;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX btnThanhToan;
 
 
 

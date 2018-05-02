@@ -38,6 +38,9 @@ namespace QuanLyKhachSan
                 btnKhachHang.Enabled = false;   
                 btnNhanVien.Enabled = false;
                 btnTKDT_bar.Enabled = false;
+                btnKhachHang.Enabled = false;
+                btnLichSu.Enabled = false;
+                btnThanhToan.Enabled = false;
                 btnDangNhap.Text = "Đăng nhập";
             }
             else if (nv.PHANQUYEN == false)
@@ -47,6 +50,9 @@ namespace QuanLyKhachSan
                 btnKhachHang.Enabled = true;
                 btnNhanVien.Enabled = false;
                 btnTKDT_bar.Enabled = false;
+                btnKhachHang.Enabled = true;
+                btnLichSu.Enabled = true;
+                btnThanhToan.Enabled = true;
                 btnDangNhap.Text = "Đăng xuất";
             }
             else
@@ -57,6 +63,9 @@ namespace QuanLyKhachSan
                 btnKhachHang.Enabled = true;
                 btnNhanVien.Enabled = true;
                 btnTKDT_bar.Enabled = true;
+                btnKhachHang.Enabled = true;
+                btnLichSu.Enabled = true;
+                btnThanhToan.Enabled = true;
                 btnDangNhap.Text = "Đăng xuất";
             }
 
