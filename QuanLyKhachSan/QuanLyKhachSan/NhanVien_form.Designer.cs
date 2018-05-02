@@ -40,6 +40,7 @@
             this.GIOITINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+<<<<<<< HEAD
             this.btnChonQuyen = new DevComponents.DotNetBar.ButtonX();
             this.rdbThongThuong = new System.Windows.Forms.RadioButton();
             this.rdbNhanVien = new System.Windows.Forms.RadioButton();
@@ -51,13 +52,20 @@
             this.cboGioiTinh = new System.Windows.Forms.ComboBox();
             this.dtpNgaySinh = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.txtMatKhau = new DevComponents.DotNetBar.Controls.TextBoxX();
+=======
+            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
+            this.dtpNgaySinh = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             this.txtSDT = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtDiaChi = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtCMND = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtHoTen = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtMaNV = new DevComponents.DotNetBar.Controls.TextBoxX();
+<<<<<<< HEAD
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
@@ -65,7 +73,10 @@
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
+<<<<<<< HEAD
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.groupPanel1.SuspendLayout();
             this.ribbonClientPanel1.SuspendLayout();
@@ -102,6 +113,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvNhanVien.DefaultCellStyle = dataGridViewCellStyle2;
+<<<<<<< HEAD
             this.dgvNhanVien.EnableHeadersVisualStyles = false;
             this.dgvNhanVien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dgvNhanVien.Location = new System.Drawing.Point(461, 75);
@@ -116,6 +128,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvNhanVien.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvNhanVien.Size = new System.Drawing.Size(766, 465);
+=======
+            this.dgvNhanVien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvNhanVien.Location = new System.Drawing.Point(406, 60);
+            this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.Size = new System.Drawing.Size(821, 443);
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             this.dgvNhanVien.TabIndex = 1;
             this.dgvNhanVien.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_RowEnter);
             // 
@@ -125,7 +143,10 @@
             this.MANV.DataPropertyName = "MANV";
             this.MANV.HeaderText = "Mã NV";
             this.MANV.Name = "MANV";
+<<<<<<< HEAD
             this.MANV.ReadOnly = true;
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // HOTEN
             // 
@@ -133,7 +154,10 @@
             this.HOTEN.DataPropertyName = "HOTEN";
             this.HOTEN.HeaderText = "Họ tên";
             this.HOTEN.Name = "HOTEN";
+<<<<<<< HEAD
             this.HOTEN.ReadOnly = true;
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // CMND
             // 
@@ -141,7 +165,10 @@
             this.CMND.DataPropertyName = "CMND";
             this.CMND.HeaderText = "CMND";
             this.CMND.Name = "CMND";
+<<<<<<< HEAD
             this.CMND.ReadOnly = true;
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // NGAYSINH
             // 
@@ -149,7 +176,10 @@
             this.NGAYSINH.DataPropertyName = "NGAYSINH";
             this.NGAYSINH.HeaderText = "Ngày sinh";
             this.NGAYSINH.Name = "NGAYSINH";
+<<<<<<< HEAD
             this.NGAYSINH.ReadOnly = true;
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // DIACHI
             // 
@@ -157,7 +187,10 @@
             this.DIACHI.DataPropertyName = "DIACHI";
             this.DIACHI.HeaderText = "Địa chỉ";
             this.DIACHI.Name = "DIACHI";
+<<<<<<< HEAD
             this.DIACHI.ReadOnly = true;
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // GIOITINH
             // 
@@ -165,7 +198,10 @@
             this.GIOITINH.DataPropertyName = "GIOITINH";
             this.GIOITINH.HeaderText = "Giới tính";
             this.GIOITINH.Name = "GIOITINH";
+<<<<<<< HEAD
             this.GIOITINH.ReadOnly = true;
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // SDT
             // 
@@ -173,7 +209,10 @@
             this.SDT.DataPropertyName = "SDT";
             this.SDT.HeaderText = "SĐT";
             this.SDT.Name = "SDT";
+<<<<<<< HEAD
             this.SDT.ReadOnly = true;
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // groupPanel1
             // 
@@ -237,6 +276,7 @@
             this.groupPanel1.TabIndex = 2;
             this.groupPanel1.Text = "Thông tin nhân viên";
             // 
+<<<<<<< HEAD
             // btnChonQuyen
             // 
             this.btnChonQuyen.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -369,13 +409,26 @@
             this.dtpNgaySinh.Format = DevComponents.Editors.eDateTimePickerFormat.Custom;
             this.dtpNgaySinh.IsPopupCalendarOpen = false;
             this.dtpNgaySinh.Location = new System.Drawing.Point(93, 175);
+=======
+            // cboGioiTinh
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
+            this.cboGioiTinh.FormattingEnabled = true;
+            this.cboGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cboGioiTinh.Location = new System.Drawing.Point(91, 267);
+            this.cboGioiTinh.Name = "cboGioiTinh";
+            this.cboGioiTinh.Size = new System.Drawing.Size(290, 23);
+            this.cboGioiTinh.TabIndex = 9;
             // 
+            // dtpNgaySinh
             // 
             this.dtpNgaySinh.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
             // 
             // 
             // 
+<<<<<<< HEAD
             this.dtpNgaySinh.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dtpNgaySinh.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
             this.dtpNgaySinh.MonthCalendar.ClearButtonVisible = true;
@@ -405,11 +458,45 @@
             this.dtpNgaySinh.Size = new System.Drawing.Size(216, 29);
             this.dtpNgaySinh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.dtpNgaySinh.TabIndex = 8;
+=======
+            this.dtpNgaySinh.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dtpNgaySinh.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dtpNgaySinh.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.dtpNgaySinh.ButtonDropDown.Visible = true;
+            this.dtpNgaySinh.CustomFormat = "dd-MM-yyyy";
+            this.dtpNgaySinh.Format = DevComponents.Editors.eDateTimePickerFormat.Custom;
+            this.dtpNgaySinh.IsPopupCalendarOpen = false;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(91, 175);
+            // 
+            // 
+            // 
+            this.dtpNgaySinh.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.dtpNgaySinh.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dtpNgaySinh.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dtpNgaySinh.MonthCalendar.ClearButtonVisible = true;
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // txtMatKhau
             // 
+<<<<<<< HEAD
             this.txtMatKhau.BackColor = System.Drawing.Color.White;
             // 
+=======
+            // 
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dtpNgaySinh.MonthCalendar.DisplayMonth = new System.DateTime(2018, 5, 1, 0, 0, 0, 0);
+            this.dtpNgaySinh.MonthCalendar.MarkedDates = new System.DateTime[0];
+            this.dtpNgaySinh.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // 
             this.txtMatKhau.Border.Class = "TextBoxBorder";
@@ -421,9 +508,24 @@
             this.txtMatKhau.TabIndex = 7;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
+<<<<<<< HEAD
             // txtSDT
             // 
             this.txtSDT.BackColor = System.Drawing.Color.White;
+=======
+            this.dtpNgaySinh.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.dtpNgaySinh.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.dtpNgaySinh.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.dtpNgaySinh.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dtpNgaySinh.MonthCalendar.TodayButtonVisible = true;
+            this.dtpNgaySinh.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(290, 21);
+            this.dtpNgaySinh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.dtpNgaySinh.TabIndex = 8;
+            // 
+            // txtSDT
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // 
             // 
@@ -435,6 +537,7 @@
             this.txtSDT.Size = new System.Drawing.Size(343, 29);
             this.txtSDT.TabIndex = 7;
             // 
+<<<<<<< HEAD
             // txtDiaChi
             // 
             this.txtDiaChi.BackColor = System.Drawing.Color.White;
@@ -447,34 +550,71 @@
             this.txtDiaChi.Location = new System.Drawing.Point(93, 221);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(216, 29);
+=======
+            this.txtSDT.Border.Class = "TextBoxBorder";
+            this.txtSDT.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtSDT.Location = new System.Drawing.Point(93, 315);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(290, 21);
+            this.txtSDT.TabIndex = 7;
+            // 
+            // txtDiaChi
+            // 
+            // 
+            // 
+            // 
+            this.txtDiaChi.Border.Class = "TextBoxBorder";
+            this.txtDiaChi.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtDiaChi.Location = new System.Drawing.Point(93, 221);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(290, 21);
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             this.txtDiaChi.TabIndex = 7;
             // 
             // txtCMND
             // 
+<<<<<<< HEAD
             this.txtCMND.BackColor = System.Drawing.Color.White;
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // 
             // 
             this.txtCMND.Border.Class = "TextBoxBorder";
             this.txtCMND.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+<<<<<<< HEAD
             this.txtCMND.ForeColor = System.Drawing.Color.Black;
             this.txtCMND.Location = new System.Drawing.Point(93, 129);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(216, 29);
+=======
+            this.txtCMND.Location = new System.Drawing.Point(93, 129);
+            this.txtCMND.Name = "txtCMND";
+            this.txtCMND.Size = new System.Drawing.Size(290, 21);
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             this.txtCMND.TabIndex = 7;
             // 
             // txtHoTen
             // 
+<<<<<<< HEAD
             this.txtHoTen.BackColor = System.Drawing.Color.White;
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // 
             // 
             this.txtHoTen.Border.Class = "TextBoxBorder";
             this.txtHoTen.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+<<<<<<< HEAD
             this.txtHoTen.ForeColor = System.Drawing.Color.Black;
             this.txtHoTen.Location = new System.Drawing.Point(93, 83);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(216, 29);
+=======
+            this.txtHoTen.Location = new System.Drawing.Point(93, 83);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(290, 21);
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             this.txtHoTen.TabIndex = 7;
             // 
             // txtMaNV
@@ -491,6 +631,7 @@
             this.txtMaNV.Size = new System.Drawing.Size(216, 29);
             this.txtMaNV.TabIndex = 7;
             // 
+<<<<<<< HEAD
             // labelX9
             // 
             // 
@@ -504,10 +645,21 @@
             this.labelX9.Text = "Mật khẩu";
             // 
             // labelX1
+=======
+            // labelX8
+            // 
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // 
             // 
+            this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX8.Location = new System.Drawing.Point(9, 315);
+            this.labelX8.Name = "labelX8";
+            this.labelX8.Size = new System.Drawing.Size(75, 23);
+            this.labelX8.TabIndex = 6;
+            this.labelX8.Text = "SĐT";
             // 
+<<<<<<< HEAD
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Location = new System.Drawing.Point(9, 357);
             this.labelX1.Name = "labelX1";
@@ -516,10 +668,21 @@
             this.labelX1.Text = "Phân quyền";
             // 
             // labelX8
+=======
+            // labelX7
+            // 
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // 
             // 
+            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX7.Location = new System.Drawing.Point(9, 268);
+            this.labelX7.Name = "labelX7";
+            this.labelX7.Size = new System.Drawing.Size(75, 23);
+            this.labelX7.TabIndex = 5;
+            this.labelX7.Text = "Giới tính";
             // 
+<<<<<<< HEAD
             this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX8.Location = new System.Drawing.Point(9, 315);
             this.labelX8.Name = "labelX8";
@@ -528,10 +691,21 @@
             this.labelX8.Text = "SĐT";
             // 
             // labelX7
+=======
+            // labelX6
+            // 
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // 
             // 
+            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX6.Location = new System.Drawing.Point(9, 221);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(75, 23);
+            this.labelX6.TabIndex = 4;
+            this.labelX6.Text = "Địa chỉ";
             // 
+<<<<<<< HEAD
             this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX7.Location = new System.Drawing.Point(9, 268);
             this.labelX7.Name = "labelX7";
@@ -540,22 +714,43 @@
             this.labelX7.Text = "Giới tính";
             // 
             // labelX6
+=======
+            // labelX5
+            // 
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // 
             // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.Location = new System.Drawing.Point(9, 174);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(75, 23);
+            this.labelX5.TabIndex = 3;
+            this.labelX5.Text = "Ngày sinh";
             // 
+<<<<<<< HEAD
             this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX6.Location = new System.Drawing.Point(9, 221);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(75, 29);
             this.labelX6.TabIndex = 4;
             this.labelX6.Text = "Địa chỉ";
+=======
+            // labelX4
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // labelX5
             // 
             // 
             // 
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.Location = new System.Drawing.Point(9, 127);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(75, 23);
+            this.labelX4.TabIndex = 2;
+            this.labelX4.Text = "CMND";
             // 
+<<<<<<< HEAD
             this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX5.Location = new System.Drawing.Point(9, 174);
             this.labelX5.Name = "labelX5";
@@ -574,11 +769,27 @@
             this.labelX4.Size = new System.Drawing.Size(75, 31);
             this.labelX4.TabIndex = 2;
             this.labelX4.Text = "CMND";
+=======
+            // labelX3
+            // 
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Location = new System.Drawing.Point(9, 80);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(75, 23);
+            this.labelX3.TabIndex = 1;
+            this.labelX3.Text = "Họ tên";
+            // 
+            // labelX2
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // labelX3
             // 
             // 
             // 
+<<<<<<< HEAD
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Location = new System.Drawing.Point(9, 80);
@@ -612,6 +823,14 @@
             this.reflectionLabel1.TabIndex = 3;
             this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Nhân viên </i><font color=\"#B02B2C\"> GONGCHA Hotel</font></" +
     "font></b>";
+=======
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.Location = new System.Drawing.Point(9, 33);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(75, 23);
+            this.labelX2.TabIndex = 0;
+            this.labelX2.Text = "Mã NV";
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
             // 
             // NhanVien_form
             // 

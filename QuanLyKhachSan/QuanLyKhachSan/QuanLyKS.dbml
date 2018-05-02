@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyKhachSan" Class="QuanLyKSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+<<<<<<< HEAD
   <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-DH0F336\SQLEXPRESS;Initial Catalog=QuanLyKhachSan;Integrated Security=True" SettingsObjectName="QuanLyKhachSan.Properties.Settings" SettingsPropertyName="QuanLyKhachSanConnectionString" Provider="System.Data.SqlClient" />
+=======
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TUTUPS\SQLEXPRESS;Initial Catalog=QuanLyKhachSan;Integrated Security=True" SettingsObjectName="QuanLyKhachSan.Properties.Settings" SettingsPropertyName="QuanLyKhachSanConnectionString1" Provider="System.Data.SqlClient" />
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
   <Table Name="dbo.DATPHONG" Member="DATPHONGs">
     <Type Name="DATPHONG">
       <Column Name="MAKH" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -9,9 +13,25 @@
       <Column Name="NGAYTRA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="TRANGTHAI" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="TONGTIEN" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+<<<<<<< HEAD
       <Association Name="KHACHHANG_DATPHONG" Member="KHACHHANG" ThisKey="MAKH" OtherKey="MAKH" Type="KHACHHANG" IsForeignKey="true" />
       <Association Name="NHANVIEN_DATPHONG" Member="NHANVIEN" ThisKey="MANV" OtherKey="MANV" Type="NHANVIEN" IsForeignKey="true" />
       <Association Name="PHONG_DATPHONG" Member="PHONG" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="PHONG" IsForeignKey="true" />
+=======
+      <Association Name="PHONG_DATPHONG" Member="PHONG" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="PHONG" IsForeignKey="true" />
+      <Association Name="KHACHHANG_DATPHONG" Member="KHACHHANG" ThisKey="MAKH" OtherKey="MAKH" Type="KHACHHANG" IsForeignKey="true" />
+      <Association Name="NHANVIEN_DATPHONG" Member="NHANVIEN" ThisKey="MANV" OtherKey="MANV" Type="NHANVIEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHONG" Member="PHONGs">
+    <Type Name="PHONG">
+      <Column Name="MAPHONG" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENPHONG" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="LOAIPHONG" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="GIAPHONG" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TRANGTHAI" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="PHONG_DATPHONG" Member="DATPHONGs" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="DATPHONG" />
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
     </Type>
   </Table>
   <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
@@ -38,6 +58,7 @@
       <Association Name="NHANVIEN_DATPHONG" Member="DATPHONGs" ThisKey="MANV" OtherKey="MANV" Type="DATPHONG" />
     </Type>
   </Table>
+<<<<<<< HEAD
   <Table Name="dbo.PHONG" Member="PHONGs">
     <Type Name="PHONG">
       <Column Name="MAPHONG" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -48,4 +69,6 @@
       <Association Name="PHONG_DATPHONG" Member="DATPHONGs" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="DATPHONG" />
     </Type>
   </Table>
+=======
+>>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
 </Database>
