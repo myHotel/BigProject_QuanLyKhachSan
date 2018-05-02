@@ -69,20 +69,16 @@ namespace QuanLyKhachSan
                 dtpNGAYNHAN.Value = DateTime.Parse(dr.Cells[3].Value.ToString());
                 txtGiaTien.Text = dr.Cells[4].Value.ToString();
                 TimeSpan c = DateTime.Now.Subtract(dtpNGAYNHAN.Value);
-                //nbrudSONGAY.Value = c.Days;
-                //nbrudGIO.Value = c.Hours;
+                int songay = c.Days;
+                int songio = c.Hours;
+                txtSoNgay.Text = songay.ToString();
+                txtSoGio.Text = songio.ToString();
                 PHONG ph = new PHONG();
                 ph = db.PHONGs.SingleOrDefault(p => p.MAPHONG == cboMaPhong.Text);
-                if (c.Days == 0)
-                {
-                    double sogio = 0;
-                    sogio = c.Hours;
-                    lblTongCong.Text = c.Hours * ph.GIAPHONG / 4 + " đ";
-                }
-                else { 
-                    lblTongCong.Text = ph.GIAPHONG * c.Days + " đ"; 
-                }
-
+                long TongTien = 0;
+                TongTien = songay * ph.GIAPHONG + (songio % 24) * (ph.GIAPHONG / 4);
+                string tongtien = TongTien.ToString();
+                lblTongCong.Text = TongTien.ToString() + " đ";
             }
            
         }

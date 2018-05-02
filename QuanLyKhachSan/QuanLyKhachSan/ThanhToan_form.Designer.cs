@@ -55,6 +55,10 @@
             this.TRANGTHAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.txtSoNgay = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtSoGio = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSPHONG)).BeginInit();
             this.SuspendLayout();
@@ -69,11 +73,15 @@
             this.groupPanel1.Controls.Add(this.lblTongCong);
             this.groupPanel1.Controls.Add(this.labelX8);
             this.groupPanel1.Controls.Add(this.dtpNGAYNHAN);
+            this.groupPanel1.Controls.Add(this.txtSoGio);
+            this.groupPanel1.Controls.Add(this.txtSoNgay);
             this.groupPanel1.Controls.Add(this.txtGiaTien);
             this.groupPanel1.Controls.Add(this.txtTENKH);
             this.groupPanel1.Controls.Add(this.txtMAKH);
             this.groupPanel1.Controls.Add(this.btnTimKiem);
             this.groupPanel1.Controls.Add(this.btnTHANHTOAN);
+            this.groupPanel1.Controls.Add(this.labelX5);
+            this.groupPanel1.Controls.Add(this.labelX4);
             this.groupPanel1.Controls.Add(this.labelX7);
             this.groupPanel1.Controls.Add(this.labelX6);
             this.groupPanel1.Controls.Add(this.labelX3);
@@ -120,7 +128,7 @@
             this.btnTaiLai.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btnTaiLai.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiLai.Image")));
             this.btnTaiLai.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.btnTaiLai.Location = new System.Drawing.Point(13, 370);
+            this.btnTaiLai.Location = new System.Drawing.Point(15, 381);
             this.btnTaiLai.Name = "btnTaiLai";
             this.btnTaiLai.Size = new System.Drawing.Size(187, 42);
             this.btnTaiLai.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -148,7 +156,7 @@
             this.lblTongCong.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblTongCong.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTongCong.ForeColor = System.Drawing.Color.Red;
-            this.lblTongCong.Location = new System.Drawing.Point(228, 350);
+            this.lblTongCong.Location = new System.Drawing.Point(217, 349);
             this.lblTongCong.Name = "lblTongCong";
             this.lblTongCong.Size = new System.Drawing.Size(195, 43);
             this.lblTongCong.TabIndex = 12;
@@ -160,7 +168,7 @@
             // 
             // 
             this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX8.Location = new System.Drawing.Point(228, 306);
+            this.labelX8.Location = new System.Drawing.Point(217, 320);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(86, 23);
             this.labelX8.TabIndex = 11;
@@ -238,7 +246,7 @@
             this.btnTHANHTOAN.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btnTHANHTOAN.Image = ((System.Drawing.Image)(resources.GetObject("btnTHANHTOAN.Image")));
             this.btnTHANHTOAN.ImageFixedSize = new System.Drawing.Size(70, 70);
-            this.btnTHANHTOAN.Location = new System.Drawing.Point(16, 288);
+            this.btnTHANHTOAN.Location = new System.Drawing.Point(16, 320);
             this.btnTHANHTOAN.Name = "btnTHANHTOAN";
             this.btnTHANHTOAN.Size = new System.Drawing.Size(186, 55);
             this.btnTHANHTOAN.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -252,11 +260,11 @@
             // 
             // 
             this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX7.Location = new System.Drawing.Point(15, 231);
+            this.labelX7.Location = new System.Drawing.Point(15, 229);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(119, 23);
+            this.labelX7.Size = new System.Drawing.Size(129, 27);
             this.labelX7.TabIndex = 0;
-            this.labelX7.Text = "Giá tiền phòng";
+            this.labelX7.Text = "Giá tiền phòng/Ngày";
             // 
             // labelX6
             // 
@@ -264,9 +272,9 @@
             // 
             // 
             this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX6.Location = new System.Drawing.Point(15, 177);
+            this.labelX6.Location = new System.Drawing.Point(15, 174);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(119, 23);
+            this.labelX6.Size = new System.Drawing.Size(129, 26);
             this.labelX6.TabIndex = 0;
             this.labelX6.Text = "Ngày nhận phòng";
             // 
@@ -278,7 +286,7 @@
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Location = new System.Drawing.Point(16, 129);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(119, 23);
+            this.labelX3.Size = new System.Drawing.Size(128, 27);
             this.labelX3.TabIndex = 0;
             this.labelX3.Text = "Tên khách hàng";
             // 
@@ -290,7 +298,7 @@
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Location = new System.Drawing.Point(16, 79);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(119, 23);
+            this.labelX2.Size = new System.Drawing.Size(128, 27);
             this.labelX2.TabIndex = 0;
             this.labelX2.Text = "Mã khách hàng";
             // 
@@ -300,9 +308,9 @@
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(16, 26);
+            this.labelX1.Location = new System.Drawing.Point(16, 22);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(118, 23);
+            this.labelX1.Size = new System.Drawing.Size(127, 27);
             this.labelX1.TabIndex = 0;
             this.labelX1.Text = "Mã phòng";
             // 
@@ -326,7 +334,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDSPHONG.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDSPHONG.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.dgvDSPHONG.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvDSPHONG.Location = new System.Drawing.Point(450, 3);
             this.dgvDSPHONG.Name = "dgvDSPHONG";
             this.dgvDSPHONG.ReadOnly = true;
@@ -409,6 +417,58 @@
             this.labelX9.Text = "Nếu thời gian sử dụng của quý khách nhỏ hơn 1 ngày thì khách sạn sẽ tính tiền the" +
     "o giờ và giá tiền bằng 1/4 giá phòng mặc định.\r\n\r\n\r\n";
             // 
+            // labelX4
+            // 
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.Location = new System.Drawing.Point(14, 276);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(65, 27);
+            this.labelX4.TabIndex = 0;
+            this.labelX4.Text = "Số ngày";
+            // 
+            // labelX5
+            // 
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.Location = new System.Drawing.Point(216, 276);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(54, 27);
+            this.labelX5.TabIndex = 0;
+            this.labelX5.Text = "Số giờ";
+            // 
+            // txtSoNgay
+            // 
+            this.txtSoNgay.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtSoNgay.Border.Class = "TextBoxBorder";
+            this.txtSoNgay.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtSoNgay.ForeColor = System.Drawing.Color.Black;
+            this.txtSoNgay.Location = new System.Drawing.Point(107, 276);
+            this.txtSoNgay.Name = "txtSoNgay";
+            this.txtSoNgay.Size = new System.Drawing.Size(95, 27);
+            this.txtSoNgay.TabIndex = 5;
+            // 
+            // txtSoGio
+            // 
+            this.txtSoGio.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtSoGio.Border.Class = "TextBoxBorder";
+            this.txtSoGio.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtSoGio.ForeColor = System.Drawing.Color.Black;
+            this.txtSoGio.Location = new System.Drawing.Point(295, 276);
+            this.txtSoGio.Name = "txtSoGio";
+            this.txtSoGio.Size = new System.Drawing.Size(95, 27);
+            this.txtSoGio.TabIndex = 5;
+            // 
             // ThanhToan_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,5 +515,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TRANGTHAI;
         private DevComponents.DotNetBar.LabelX labelX9;
         private DevComponents.DotNetBar.ButtonX btnTaiLai;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtSoGio;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtSoNgay;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.LabelX labelX4;
     }
 }

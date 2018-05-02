@@ -21,11 +21,11 @@ namespace QuanLyKhachSan
 
         private void loadDSLichSu()
         {
-            dgvLichSu.DataSource = db.LICHSU_VIEWs.Select(p => new
+            dgvLichSu.DataSource = db.DATPHONGs.Select(p => new
             {
-                p.TENPHONG,
-                p.TENKH,
-                p.HOTEN,
+                p.PHONG.TENPHONG,
+                p.KHACHHANG.TENKH,
+                p.NHANVIEN.HOTEN,
                 p.NGAYNHAN,
                 p.NGAYTRA,
                 p.TRANGTHAI

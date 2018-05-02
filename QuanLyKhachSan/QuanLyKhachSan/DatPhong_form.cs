@@ -128,7 +128,7 @@ namespace QuanLyKhachSan
                 MAPHONG = txtMAPHONG.Text,
                 MAKH = txtMAKH.Text,
                 //chỉnh khúc này từ dtpNgayNhan thành DateTime.Now và xóa luôn dtpNgayNhan
-                NGAYNHAN = DateTime.Now,
+                NGAYNHAN = DateTime.Now,    
                 NGAYTRA = null,
                 TRANGTHAI = "Chưa thanh toán"
             };
@@ -167,6 +167,11 @@ namespace QuanLyKhachSan
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
             LOADDSPhong();
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
 
       
