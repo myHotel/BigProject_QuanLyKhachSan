@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace QuanLyKhachSan
 {
@@ -34,8 +35,7 @@ namespace QuanLyKhachSan
             {
                 btnInDS_bar.Enabled = false;
                 btnDatPhong.Enabled = false;
-                btnKhachHang.Enabled = false;
-                btnTTTK.Enabled = false;
+                btnKhachHang.Enabled = false;   
                 btnNhanVien.Enabled = false;
                 btnTKDT_bar.Enabled = false;
                 btnDangNhap.Text = "Đăng nhập";
@@ -45,7 +45,6 @@ namespace QuanLyKhachSan
                 btnInDS_bar.Enabled = false;
                 btnDatPhong.Enabled = true;
                 btnKhachHang.Enabled = true;
-                btnTTTK.Enabled = true;
                 btnNhanVien.Enabled = false;
                 btnTKDT_bar.Enabled = false;
                 btnDangNhap.Text = "Đăng xuất";
@@ -56,7 +55,6 @@ namespace QuanLyKhachSan
                 btnInDS_bar.Enabled = true;
                 btnDatPhong.Enabled = true;
                 btnKhachHang.Enabled = true;
-                btnTTTK.Enabled = true;
                 btnNhanVien.Enabled = true;
                 btnTKDT_bar.Enabled = true;
                 btnDangNhap.Text = "Đăng xuất";
@@ -76,7 +74,6 @@ namespace QuanLyKhachSan
             btnInDS_bar.Enabled = false;
             btnDatPhong.Enabled = false;
             btnKhachHang.Enabled = false;
-            btnTTTK.Enabled = false;
             btnNhanVien.Enabled = false;
             btnTKDT_bar.Enabled = false;
             lblMaND.Text = "Mã người dùng";
@@ -169,6 +166,12 @@ namespace QuanLyKhachSan
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
             KhachHang_form f = new KhachHang_form();
+            f.ShowDialog();
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            NhanVien_form f = new NhanVien_form();
             f.ShowDialog();
         }
     }

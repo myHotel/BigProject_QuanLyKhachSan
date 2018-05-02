@@ -76,3 +76,4 @@ F:\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.DoanhThu_form.res
 D:\Hoc\nam 2-hk2\NMCNPM\project\BigProject_QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.KhachHang_form.resources
 >>>>>>> dd890e793c42c7920c12cd802bf0304eb76c76cd
 F:\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.KhachHang_form.resources
+F:\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\WindowsFormsApp1.NhanVien_form.resources

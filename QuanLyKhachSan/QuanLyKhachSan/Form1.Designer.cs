@@ -50,7 +50,6 @@
             this.explorerBarGroupItem1 = new DevComponents.DotNetBar.ExplorerBarGroupItem();
             this.btnDangNhap = new DevComponents.DotNetBar.ButtonItem();
             this.btnDMKbar = new DevComponents.DotNetBar.ButtonItem();
-            this.btnTTTK = new DevComponents.DotNetBar.ButtonItem();
             this.btnThoat = new DevComponents.DotNetBar.ButtonItem();
             this.btnNhanSu = new DevComponents.DotNetBar.ExplorerBarGroupItem();
             this.btnNhanVien = new DevComponents.DotNetBar.ButtonItem();
@@ -244,7 +243,7 @@
             this.panelEx1.Controls.Add(this.lblTenND);
             this.panelEx1.Controls.Add(this.lblMaND);
             this.panelEx1.Controls.Add(this.labelX1);
-            this.panelEx1.Location = new System.Drawing.Point(2, 304);
+            this.panelEx1.Location = new System.Drawing.Point(2, 282);
             this.panelEx1.Name = "panelEx1";
             this.panelEx1.Size = new System.Drawing.Size(273, 150);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -325,7 +324,6 @@
             this.explorerBarGroupItem1.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnDangNhap,
             this.btnDMKbar,
-            this.btnTTTK,
             this.btnThoat});
             this.explorerBarGroupItem1.Text = "Hệ thống";
             // 
@@ -374,19 +372,6 @@
             this.btnDMKbar.Name = "btnDMKbar";
             this.btnDMKbar.Text = "Đổi mật khẩu";
             this.btnDMKbar.Click += new System.EventHandler(this.btnDMKbar_Click);
-            // 
-            // btnTTTK
-            // 
-            this.btnTTTK.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnTTTK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTTTK.FontItalic = true;
-            this.btnTTTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.btnTTTK.HotFontUnderline = true;
-            this.btnTTTK.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.btnTTTK.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.btnTTTK.Name = "btnTTTK";
-            this.btnTTTK.Text = "Thông tin tài khoản";
-            this.btnTTTK.Click += new System.EventHandler(this.btnTTTK_Click);
             // 
             // btnThoat
             // 
@@ -455,6 +440,7 @@
             this.btnNhanVien.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Text = "Danh sách nhân viên";
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             // 
             // btnInDS_bar
             // 
@@ -729,7 +715,6 @@
         private DevComponents.DotNetBar.LabelX lblMaND;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.ButtonItem btnDMKbar;
-        private DevComponents.DotNetBar.ButtonItem btnTTTK;
         private DevComponents.DotNetBar.ButtonItem btnThoat;
         private DevComponents.DotNetBar.ExplorerBarGroupItem btnNhanSu;
         private DevComponents.DotNetBar.ButtonItem btnNhanVien;

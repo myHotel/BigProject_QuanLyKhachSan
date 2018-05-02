@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyKhachSan;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,8 @@ namespace WindowsFormsApp1
         {
             LoadDSNhanVien();
         }
+
+        public static NHANVIEN nv = new NHANVIEN(); 
         private void LoadDSNhanVien()
         {
             dgvNhanVien.DataSource = db.NHANVIENs.OrderBy(p => p.MANV).Select(p => new {
@@ -47,6 +50,82 @@ namespace WindowsFormsApp1
                 txtDiaChi.Text = dgvr.Cells[4].Value.ToString();
                 cboGioiTinh.Text = dgvr.Cells[5].Value.ToString();
                 txtSDT.Text = dgvr.Cells[6].Value.ToString();
+            }
+            nv = db.NHANVIENs.SingleOrDefault(p => p.MANV == txtMaNV.Text.Trim());
+        }
+
+        private void btnXemChiTiet_Click(object sender, EventArgs e)
+        {
+            TKNV_form f = new TKNV_form();
+            f.ShowDialog();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            NHANVIEN nv = new NHANVIEN
+            { 
+                MANV = txtMaNV.Text,
+                HOTEN = txtHoTen.Text,
+                GIOITINH = cboGioiTinh.Text,
+                NGAYSINH = dtpNgaySinh.Value,
+                CMND = txtCMND.Text,
+                DIACHI = txtDiaChi.Text,
+                SDT = txtSDT.Text,
+            };
+            if (!rdbThongThuong.Checked)
+            {
+                    nv.TAIKHOAN = txtMaNV.Text;
+                    nv.MATKHAU = txtMatKhau.Text;
+                    if(rdbQuanLy.Checked)
+                        nv.PHANQUYEN = true;
+                    else if(rdbNhanVien.Checked)
+                        nv.PHANQUYEN = false;
+             }
+             else 
+             {
+                    nv.TAIKHOAN = null;
+                    nv.MATKHAU = null;
+             }
+            
+
+            if (db.NHANVIENs.Where(p => p.MANV == txtMaNV.Text).SingleOrDefault() != null)
+            {
+                MessageBox.Show("Tài khoản bạn nhập bị trùng vui lòng kiểm tra lại !.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if(txtMaNV.Text.Trim() == "" || txtHoTen.Text.Trim() == "" || txtCMND.Text.Trim() == "" || txtDiaChi.Text.Trim() == "")
+            {
+                MessageBox.Show("Một số thông tin còn thiếu!.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if(!rdbThongThuong.Checked && txtMatKhau.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu với phân quyền trên !.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                db.NHANVIENs.InsertOnSubmit(nv);
+                db.SubmitChanges();
+                MessageBox.Show("Tạo nhân viên thành công!.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadDSNhanVien();
+            }
+        }
+
+        private void btnChonQuyen_Click(object sender, EventArgs e)
+        {
+            if (!rdbThongThuong.Checked)
+                txtMatKhau.Enabled = true;
+            else
+                txtMatKhau.Enabled = false;
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            NHANVIEN nv = db.NHANVIENs.SingleOrDefault(p => p.MANV == txtMaNV.Text);
+            DialogResult dr = MessageBox.Show("Bạn có muốn xóa nhân viên "+ nv.MANV + " !.", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if(nv!=null && dr == DialogResult.OK)
+            {
+                db.NHANVIENs.DeleteOnSubmit(nv);
+                db.SubmitChanges();
+                MessageBox.Show("Xóa thành công!.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

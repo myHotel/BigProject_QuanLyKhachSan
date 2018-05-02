@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace QuanLyKhachSan
 {
@@ -41,7 +42,7 @@ namespace QuanLyKhachSan
         private void TKNV_form_Load(object sender, EventArgs e)
         {
 
-            nv = Form1.nv;
+            nv = NhanVien_form.nv;
             lblManv.Text = nv.MANV;
             txtTNV.Text = nv.HOTEN;
             lblTaiKhoan.Text = nv.TAIKHOAN;
