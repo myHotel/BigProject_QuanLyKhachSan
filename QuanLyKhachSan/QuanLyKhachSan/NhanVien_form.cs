@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace WindowsFormsApp1
 {
@@ -18,6 +19,31 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
         QuanLyKSDataContext db = new QuanLyKSDataContext();
+
+        private string EncodeSHA1(string pass)
+        {
+
+            SHA1CryptoServiceProvider sha1 = new SHA1CryptoServiceProvider();
+
+            byte[] bs = System.Text.Encoding.UTF8.GetBytes(pass);
+
+            bs = sha1.ComputeHash(bs);
+
+            System.Text.StringBuilder s = new System.Text.StringBuilder();
+
+            foreach (byte b in bs)
+            {
+
+                s.Append(b.ToString("x1").ToLower());
+
+            }
+
+            pass = s.ToString();
+
+            return pass;
+
+        }
+
         private void NhanVien_form_Load(object sender, EventArgs e)
         {
             LoadDSNhanVien();
@@ -75,7 +101,7 @@ namespace WindowsFormsApp1
             if (!rdbThongThuong.Checked)
             {
                     nv.TAIKHOAN = txtMaNV.Text;
-                    nv.MATKHAU = txtMatKhau.Text;
+                    nv.MATKHAU = EncodeSHA1(txtMatKhau.Text.Trim());
                     if(rdbQuanLy.Checked)
                         nv.PHANQUYEN = true;
                     else if(rdbNhanVien.Checked)
@@ -126,6 +152,7 @@ namespace WindowsFormsApp1
                 db.NHANVIENs.DeleteOnSubmit(nv);
                 db.SubmitChanges();
                 MessageBox.Show("Xóa thành công!.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadDSNhanVien();
             }
         }
     }
