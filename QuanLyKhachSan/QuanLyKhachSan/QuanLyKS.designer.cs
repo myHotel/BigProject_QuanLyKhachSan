@@ -33,24 +33,18 @@ namespace QuanLyKhachSan
     partial void InsertDATPHONG(DATPHONG instance);
     partial void UpdateDATPHONG(DATPHONG instance);
     partial void DeleteDATPHONG(DATPHONG instance);
-<<<<<<< HEAD
-=======
     partial void InsertPHONG(PHONG instance);
     partial void UpdatePHONG(PHONG instance);
     partial void DeletePHONG(PHONG instance);
->>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
     partial void InsertKHACHHANG(KHACHHANG instance);
     partial void UpdateKHACHHANG(KHACHHANG instance);
     partial void DeleteKHACHHANG(KHACHHANG instance);
     partial void InsertNHANVIEN(NHANVIEN instance);
     partial void UpdateNHANVIEN(NHANVIEN instance);
     partial void DeleteNHANVIEN(NHANVIEN instance);
-<<<<<<< HEAD
     partial void InsertPHONG(PHONG instance);
     partial void UpdatePHONG(PHONG instance);
     partial void DeletePHONG(PHONG instance);
-=======
->>>>>>> b846cfbb9e24ef2224c682d050ca506d89d82104
     #endregion
 		
 		public QuanLyKSDataContext() : 
@@ -91,7 +85,6 @@ namespace QuanLyKhachSan
 			}
 		}
 		
-<<<<<<< HEAD
 		public System.Data.Linq.Table<KHACHHANG> KHACHHANGs
 		{
 			get
@@ -113,7 +106,7 @@ namespace QuanLyKhachSan
 			get
 			{
 				return this.GetTable<PHONG>();
-=======
+            }
 		public System.Data.Linq.Table<PHONG> PHONGs
 		{
 			get
@@ -729,7 +722,8 @@ namespace QuanLyKhachSan
 			get
 			{
 				return this._TONGTIEN;
-			}
+			
+public  string TAIKHOAN { get; set; }}
 			set
 			{
 				if ((this._TONGTIEN != value))
