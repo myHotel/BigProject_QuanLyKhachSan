@@ -159,5 +159,17 @@ namespace QuanLyKhachSan
             LichSu_form f = new LichSu_form();
             f.ShowDialog();
         }
+
+        private void btnTKDT_bar_Click(object sender, EventArgs e)
+        {
+            DoanhThu_form f = new DoanhThu_form();
+            f.ShowDialog();
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            KhachHang_form f = new KhachHang_form();
+            f.ShowDialog();
+        }
     }
 }

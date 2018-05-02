@@ -208,6 +208,7 @@
             this.Controls.Add(this.dgvKhachHang);
             this.Controls.Add(this.reflectionLabel1);
             this.Name = "KhachHang_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KhachHang_form";
             this.Load += new System.EventHandler(this.KhachHang_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();

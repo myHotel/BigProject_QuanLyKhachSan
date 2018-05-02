@@ -522,6 +522,7 @@
             this.btnTKDT_bar.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
             this.btnTKDT_bar.Name = "btnTKDT_bar";
             this.btnTKDT_bar.Text = "Tổng kết doanh thu";
+            this.btnTKDT_bar.Click += new System.EventHandler(this.btnTKDT_bar_Click);
             // 
             // btninfo
             // 
@@ -651,6 +652,7 @@
             this.btnKhachHang.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnKhachHang.TabIndex = 3;
             this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnDatPhong
             // 
