@@ -24,7 +24,6 @@ namespace QuanLyKhachSan
         QuanLyKSDataContext db = new QuanLyKSDataContext();
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            long s = 0;
             int ngay1 = dtp1.Value.Day, thang1 = dtp1.Value.Month, nam1 = dtp1.Value.Year;
             int ngay2 = dtp2.Value.Day, thang2 = dtp2.Value.Month, nam2 = dtp2.Value.Year;
             dgvDanhSach.DataSource = db.DATPHONGs.Where(p => p.NGAYNHAN.Value.Day >= ngay1 && p.NGAYNHAN.Value.Day <= ngay2 && p.NGAYNHAN.Value.Month >= thang1 && p.NGAYNHAN.Value.Month <= thang2 && p.NGAYNHAN.Value.Year >= nam1 && p.NGAYNHAN.Value.Year <= nam2).Select(p => new

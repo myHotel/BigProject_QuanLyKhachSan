@@ -73,7 +73,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvLichSu.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvLichSu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvLichSu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dgvLichSu.Location = new System.Drawing.Point(0, 64);
             this.dgvLichSu.Name = "dgvLichSu";
             this.dgvLichSu.ReadOnly = true;
@@ -135,6 +135,7 @@
             this.Controls.Add(this.dgvLichSu);
             this.Controls.Add(this.reflectionLabel1);
             this.Name = "LichSu_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LichSu_form";
             this.Load += new System.EventHandler(this.LichSu_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichSu)).EndInit();
