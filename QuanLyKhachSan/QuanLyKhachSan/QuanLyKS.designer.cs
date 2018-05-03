@@ -45,7 +45,7 @@ namespace QuanLyKhachSan
     #endregion
 		
 		public QuanLyKSDataContext() : 
-				base(global::QuanLyKhachSan.Properties.Settings.Default.QuanLyKhachSanConnectionString1, mappingSource)
+				base(global::QuanLyKhachSan.Properties.Settings.Default.QuanLyKhachSanConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

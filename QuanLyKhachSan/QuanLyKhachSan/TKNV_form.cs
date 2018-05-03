@@ -55,7 +55,8 @@ namespace QuanLyKhachSan
             txtCMND.Text = nv.CMND;
             if (nv.PHANQUYEN == true)
                 lblChucVu.Text = "Quản lý";
-            else lblChucVu.Text = "Nhân viên";
+            else if (nv.PHANQUYEN == false) lblChucVu.Text = "Nhân viên";
+            else lblChucVu.Text = "Thông thường";
             txtTNV.ReadOnly = true;
             txtDC.ReadOnly = true;
             txtSDT.ReadOnly = true;
