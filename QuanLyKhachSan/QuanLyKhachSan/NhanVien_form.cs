@@ -1,5 +1,4 @@
-﻿using QuanLyKhachSan;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 
-namespace WindowsFormsApp1
+namespace QuanLyKhachSan
 {
     public partial class NhanVien_form : Form
     {

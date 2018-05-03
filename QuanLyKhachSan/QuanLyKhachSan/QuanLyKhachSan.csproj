@@ -169,9 +169,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="QuanLyKS.dbml.layout">
-      <DependentUpon>QuanLyKS.dbml</DependentUpon>
-    </None>
     <EmbeddedResource Include="ThanhToan_form.resx">
       <DependentUpon>ThanhToan_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +191,9 @@
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>QuanLyKS.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKS.dbml.layout">
+      <DependentUpon>QuanLyKS.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
