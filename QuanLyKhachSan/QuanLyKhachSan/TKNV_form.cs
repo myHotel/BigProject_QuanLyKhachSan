@@ -16,7 +16,9 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
         }
+
         NHANVIEN nv = new NHANVIEN();
+
         QuanLyKSDataContext db = new QuanLyKSDataContext();
         private void buttonX1_Click(object sender, EventArgs e)
         {

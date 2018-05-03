@@ -32,7 +32,6 @@ namespace QuanLyKhachSan
 
             if(nv.PHANQUYEN == null)
             {
-                btnInDS_bar.Enabled = false;
                 btnDatPhong.Enabled = false;
                 btnKhachHang.Enabled = false;   
                 btnNhanVien.Enabled = false;
@@ -44,7 +43,6 @@ namespace QuanLyKhachSan
             }
             else if (nv.PHANQUYEN == false)
             {
-                btnInDS_bar.Enabled = false;
                 btnDatPhong.Enabled = true;
                 btnKhachHang.Enabled = true;
                 btnNhanVien.Enabled = false;
@@ -57,7 +55,6 @@ namespace QuanLyKhachSan
             else
             {
                 btnDatPhong.Enabled = true;
-                btnInDS_bar.Enabled = true;
                 btnDatPhong.Enabled = true;
                 btnKhachHang.Enabled = true;
                 btnNhanVien.Enabled = true;
@@ -79,7 +76,6 @@ namespace QuanLyKhachSan
         private void Form1_Load(object sender, EventArgs e)
         {
             btnDatPhong.Enabled = false;
-            btnInDS_bar.Enabled = false;
             btnDatPhong.Enabled = false;
             btnKhachHang.Enabled = false;
             btnNhanVien.Enabled = false;

@@ -53,7 +53,6 @@
             this.btnThoat = new DevComponents.DotNetBar.ButtonItem();
             this.btnNhanSu = new DevComponents.DotNetBar.ExplorerBarGroupItem();
             this.btnNhanVien = new DevComponents.DotNetBar.ButtonItem();
-            this.btnInDS_bar = new DevComponents.DotNetBar.ButtonItem();
             this.explorerBarGroupItem3 = new DevComponents.DotNetBar.ExplorerBarGroupItem();
             this.btnTKDT_bar = new DevComponents.DotNetBar.ButtonItem();
             this.btninfo = new DevComponents.DotNetBar.ButtonItem();
@@ -230,7 +229,7 @@
             this.explorerBar1.Images = null;
             this.explorerBar1.Location = new System.Drawing.Point(2, 82);
             this.explorerBar1.Name = "explorerBar1";
-            this.explorerBar1.Size = new System.Drawing.Size(276, 468);
+            this.explorerBar1.Size = new System.Drawing.Size(276, 413);
             this.explorerBar1.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors;
             this.explorerBar1.TabIndex = 1;
             this.explorerBar1.Text = "explorerBar1";
@@ -243,7 +242,7 @@
             this.panelEx1.Controls.Add(this.lblTenND);
             this.panelEx1.Controls.Add(this.lblMaND);
             this.panelEx1.Controls.Add(this.labelX1);
-            this.panelEx1.Location = new System.Drawing.Point(2, 282);
+            this.panelEx1.Location = new System.Drawing.Point(2, 260);
             this.panelEx1.Name = "panelEx1";
             this.panelEx1.Size = new System.Drawing.Size(273, 150);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -405,8 +404,7 @@
             this.btnNhanSu.Name = "btnNhanSu";
             this.btnNhanSu.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors;
             this.btnNhanSu.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnNhanVien,
-            this.btnInDS_bar});
+            this.btnNhanVien});
             this.btnNhanSu.Text = "Nhân sự";
             // 
             // 
@@ -441,18 +439,6 @@
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Text = "Danh sách nhân viên";
             this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
-            // 
-            // btnInDS_bar
-            // 
-            this.btnInDS_bar.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnInDS_bar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInDS_bar.FontItalic = true;
-            this.btnInDS_bar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.btnInDS_bar.HotFontUnderline = true;
-            this.btnInDS_bar.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.btnInDS_bar.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.btnInDS_bar.Name = "btnInDS_bar";
-            this.btnInDS_bar.Text = "In danh sách nhân viên";
             // 
             // explorerBarGroupItem3
             // 
@@ -718,7 +704,6 @@
         private DevComponents.DotNetBar.ButtonItem btnThoat;
         private DevComponents.DotNetBar.ExplorerBarGroupItem btnNhanSu;
         private DevComponents.DotNetBar.ButtonItem btnNhanVien;
-        private DevComponents.DotNetBar.ButtonItem btnInDS_bar;
         private DevComponents.DotNetBar.ExplorerBarGroupItem explorerBarGroupItem3;
         private DevComponents.DotNetBar.ButtonItem btnTKDT_bar;
         private DevComponents.DotNetBar.ButtonItem btninfo;

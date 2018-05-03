@@ -97,14 +97,12 @@ namespace QuanLyKhachSan
                 DIACHI = txtDiaChi.Text,
                 SDT = txtSDT.Text,
             };
+            //bỏ rdbQuanLy
             if (!rdbThongThuong.Checked)
             {
                     nv.TAIKHOAN = txtMaNV.Text;
                     nv.MATKHAU = EncodeSHA1(txtMatKhau.Text.Trim());
-                    if(rdbQuanLy.Checked)
-                        nv.PHANQUYEN = true;
-                    else if(rdbNhanVien.Checked)
-                        nv.PHANQUYEN = false;
+                    nv.PHANQUYEN = false;
              }
              else 
              {
@@ -154,5 +152,7 @@ namespace QuanLyKhachSan
                 LoadDSNhanVien();
             }
         }
+
+        
     }
 }
